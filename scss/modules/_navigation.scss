@@ -1,0 +1,29 @@
+#header-content nav {
+    width: 70%;
+    margin-top: 2.5rem;
+    padding: 5px;
+    border: 2px solid $primary-color;
+    border-radius: 20px;
+    box-shadow: $shadow-color 0px 1px 1px, $shadow-color 0px 2px 2px, 
+                $shadow-color 0px 4px 4px, $shadow-color 0px 8px 8px, 
+                $shadow-color 0px 16px 16px;
+    
+    ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        
+        li {
+            font-weight: 600;
+            font-size: clamp(0.875rem, 0.8411rem + 0.1695vw, 1rem);
+            width: 32.5%;
+            padding: 5px 0px;
+            text-align: center;
+            border-radius: 20px;
+            color: rgb(179, 179, 179);
+            transition: all .4s ease-in-out;
+            cursor: pointer;
+        }
+    }
+}
