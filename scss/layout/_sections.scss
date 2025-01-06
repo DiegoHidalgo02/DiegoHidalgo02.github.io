@@ -1,0 +1,6 @@
+section:not(#home){
+    background: linear-gradient(300deg,#4f9da6,#1a0841,#ffad5a);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    width: 100%;
+}
