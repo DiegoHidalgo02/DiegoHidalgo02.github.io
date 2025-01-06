@@ -3,3 +3,13 @@ $primary-color: #355576;
 $accent-color: #ffad5a;
 $dark-bg: #1a0841;
 $shadow-color: #35567619;
+$width100: 100%;
+
+@mixin width100{
+    width: $width100;
+}
+
+@mixin widthAndPosition{
+    margin: 0 auto;
+    width: min($width100, $max-width);
+}
