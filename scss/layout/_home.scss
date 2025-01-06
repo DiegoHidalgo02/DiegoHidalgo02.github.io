@@ -1,8 +1,8 @@
 #home{
-    width: 100%;
+    @include width100;
     height: 100dvh;
     color: rgb(196, 196, 196);
-    background-color: #1a0841;
+    background-color: $dark-bg;
 }
   
 
@@ -10,15 +10,14 @@
     z-index: 1;
     content: "";
     position: absolute;
-    width: 100%;
-    background: linear-gradient(to top, transparent, #1a0841 ,#1a0841);
+    @include width100;
+    background: linear-gradient(to top, transparent, $dark-bg, $dark-bg);
     height: 20px;
     margin-top: -7px;
 }
 
 #home-content{
-    width: min(100%, 1500px);
-    margin: 0 auto;
+    @include widthAndPosition;
     text-align: center;
     height: 100dvh;
     display: flex;
@@ -37,7 +36,7 @@
 
 #titleName{
     font-size: clamp(4.8rem, 3.8519rem + 4.7407vw, 10rem);
-    color: #ffad5a;
+    color: $accent-color;
     text-shadow: #fdad5d 1px 0 10px;
 }
 
