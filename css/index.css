@@ -16,7 +16,6 @@ body{
 header{
     width: 100%;
     height: 65px;
-    padding-top: 1.5rem;
     position: absolute;
 }
 
@@ -28,14 +27,15 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    color: #4f9da6;
 }
 
 #header-content nav{
     width: 70%;
-    margin-top: 1.5rem;
-    /* border: 1px solid rgb(233, 233, 233); */
+    margin-top: 2.5rem;
+    padding: 5px;
+    border: 2px solid #355576;
+    border-radius: 20px;
+    box-shadow: #35567619 0px 1px 1px, #35567619 0px 2px 2px, #35567619 0px 4px 4px, #35567619 0px 8px 8px, #35567619 0px 16px 16px;
 }
 
 #header-content nav ul{
@@ -47,6 +47,15 @@ header{
 
 #header-content nav ul li{
     font-weight: 600;
+    font-size: clamp(0.875rem, 0.8411rem + 0.1695vw, 1rem);
+    /*Serve per allineare bene il testo di ogni link della navbar*/
+    width: 32.5%;
+    padding: 5px 0px 5px 0px;
+    text-align: center;
+    border-radius: 20px;
+    color: rgb(179, 179, 179);
+    transition: all .4s ease-in-out;
+    cursor: pointer;
 }
 
 #header-content nav ul li:hover{
@@ -54,6 +63,7 @@ header{
 }
 
 #header-content nav ul li:active{
+    
     color: #ffad5a;
     text-shadow: #fdad5d 1px 0 10px;
 }
@@ -71,7 +81,7 @@ section:not(#home){
 #home{
     width: 100%;
     height: 100dvh;
-    color: white;
+    color: rgb(196, 196, 196);
     background-color: #1a0841;
 }
   
@@ -148,10 +158,6 @@ marquee{
     }
 }
 
-
-#whoiam{
-}
-
 /*Project section*/
 
 #projects-content{
@@ -165,7 +171,6 @@ marquee{
 @keyframes gradient-animation-text {
     0%{
         color: #1a0841;
-        text-shadow: #24095f 1px 0 10px;
     }
     50%{
         color: #ffad5a;
@@ -173,7 +178,6 @@ marquee{
     }
     100%{
         color: #1a0841;
-        text-shadow: #24095f 1px 0 10px;
     }
 }
 
@@ -189,4 +193,20 @@ marquee{
     #titleWork{
         margin-top: 25px;
     }
+}
+
+.button{
+    padding: 10px 20px;
+    background-color: #355576;
+    border-radius: 20px;
+    box-shadow: #35567619 0px 1px 1px, #35567619 0px 2px 2px, #35567619 0px 4px 4px, #35567619 0px 8px 8px, #35567619 0px 16px 16px;
+    cursor: pointer;
+}
+
+.button:active{
+    transform: scale(.993);
+}
+
+#downloadCV{
+    margin-top: 2rem;
 }
