@@ -1,12 +1,11 @@
 header {
-    width: 100%;
+    @include width100;
     height: 65px;
     position: absolute;
 }
 
 #header-content {
-    width: min(100%, $max-width);
-    margin: 0 auto;
+    @include widthAndPosition;
     display: flex;
     flex-direction: column;
     align-items: center;
