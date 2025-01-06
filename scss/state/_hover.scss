@@ -1,9 +1,9 @@
 #header-content nav ul li:hover{
-    color:#ffad5a ;
+    color:$accent-color ;
 }
 
 #header-content nav ul li:active{
     
-    color: #ffad5a;
+    color: $accent-color;
     text-shadow: #fdad5d 1px 0 10px;
 }
