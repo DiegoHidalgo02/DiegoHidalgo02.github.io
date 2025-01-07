@@ -2,20 +2,15 @@
     display: grid;
     place-items: center;
     overflow-x: hidden;
+    margin-top: 2rem;
 
     @media (min-width: 1024px) {
-        &:not(:first-child){
-            margin-top: 5rem;
-        }
+        margin-top: 5rem;
     }
     border-radius: 20px;
 }
 
 .slider{
-    height: 280px;
-    @media (min-width: 1024px) {
-        height: auto;
-    }
     margin: auto;
     position: relative;
     display: grid;
@@ -46,12 +41,15 @@
 
 .slider-track{
     display: flex;
-    width: calc(280px * 10);
+    // width: calc(245px * 10);
 
+    // @media (min-width: 1024px) {
+    //   width: calc(600px * 10);  
+    // }
+    width: calc(75vw * 10);
     @media (min-width: 1024px) {
-      width: calc(600px * 10);  
+        width: calc(35vw * 10);
     }
-    
     animation: scroll 50s linear infinite;
 
     &:hover{
@@ -61,10 +59,12 @@
 }
 
 .slide{
-    width: 280px;
-    @media (min-width: 1024px) {
-        width: 600px; 
-    }
+    // width: 245px;
+    // @media (min-width: 1024px) {
+    //     width: 600px; 
+    // }
+    width: calc(75vw - 15px);
+    max-width: 600px;
     display: flex;
     align-items: center;
     margin-left: 15px;
