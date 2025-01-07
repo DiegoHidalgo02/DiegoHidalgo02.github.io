@@ -3,4 +3,9 @@
     @include widthAndPosition;
     font-size: clamp(1.5rem, 1.2288rem + 1.3559vw, 2.5rem);
     animation: gradient-animation-text 18s ease infinite; 
+    padding-left:1.5rem;
+
+    &:first-child{
+        margin-top: 4.5rem;
+    }
 }
