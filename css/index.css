@@ -180,17 +180,24 @@ marquee {
   transform: rotateZ(180deg);
 }
 
-.slider-track {
+.slider-track, .slider-track-reverse {
   display: flex;
   width: 750vw;
   animation: scroll 50s linear infinite;
 }
 @media (min-width: 1024px) {
-  .slider-track {
+  .slider-track, .slider-track-reverse {
     width: 350vw;
   }
 }
-.slider-track:hover {
+.slider-track:hover, .slider-track-reverse:hover {
+  animation-play-state: paused;
+}
+
+.slider-track-reverse {
+  animation: scroll-reverse 50s linear infinite;
+}
+.slider-track-reverse:hover {
   animation-play-state: paused;
 }
 
@@ -305,14 +312,12 @@ main {
     transform: translateX(-1400px);
   }
 }
-@media (min-width: 1024px) {
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-3000px);
-    }
+@keyframes scroll-reverse {
+  100% {
+    transform: translateX(1400px);
+  }
+  0% {
+    transform: translateX(0);
   }
 }
 #header-content nav ul li:hover {
