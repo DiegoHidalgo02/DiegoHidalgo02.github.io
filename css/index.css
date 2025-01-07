@@ -27,6 +27,7 @@ section:not(#home) {
   background: linear-gradient(300deg, #4f9da6, #1a0841, #ffad5a);
   background-size: 180% 180%;
   animation: gradient-animation 18s ease infinite;
+  min-height: 100vh;
   width: 100%;
 }
 
@@ -92,15 +93,15 @@ marquee {
 }
 
 #projects-content {
-  margin: 0 auto;
-  width: min(100%, 1500px);
-  height: 100vh;
   padding: 1.5rem;
-  padding-top: 6.5rem;
+  padding-top: 4rem;
+  color: rgb(196, 196, 196);
 }
 
 #projects-content h2 {
   color: #ffad5a;
+  margin: 0 auto;
+  width: min(100%, 1500px);
   font-size: clamp(1.5rem, 1.2288rem + 1.3559vw, 2.5rem);
   animation: gradient-animation-text 18s ease infinite;
 }
@@ -151,6 +152,154 @@ marquee {
   width: 24px;
   height: 24px;
   margin-left: 37px;
+}
+
+.slider-container {
+  display: grid;
+  place-items: center;
+  overflow-x: hidden;
+  border-radius: 20px;
+}
+@media (min-width: 1024px) {
+  .slider-container:not(:first-child) {
+    margin-top: 5rem;
+  }
+}
+
+.slider {
+  height: 280px;
+  margin: auto;
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+}
+@media (min-width: 1024px) {
+  .slider {
+    height: auto;
+  }
+}
+
+.slider-track {
+  display: flex;
+  width: 2800px;
+  animation: scroll 50s linear infinite;
+}
+@media (min-width: 1024px) {
+  .slider-track {
+    width: 6000px;
+  }
+}
+
+.slider-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1400px);
+  }
+}
+@media (min-width: 1024px) {
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-3000px);
+    }
+  }
+}
+.slide {
+  width: 280px;
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  perspective: 100px;
+  position: relative;
+}
+@media (min-width: 1024px) {
+  .slide {
+    width: 600px;
+  }
+}
+
+.slide img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.slider img:hover {
+  transform: translateZ(20px);
+  transition: transform 1s;
+}
+
+.slider::before, .slider::after {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 15%;
+  z-index: 2;
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider-visualization {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.slider-vs-container {
+  border: 1px solid #355576;
+  border-radius: 20px;
+  display: flex;
+}
+.slider-vs-container div {
+  padding: 10px 20px;
+  position: relative;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: clamp(0.875rem, 0.8411rem + 0.1695vw, 1rem);
+}
+.slider-vs-container div input {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.slider-vs-container div:has(input:checked) {
+  background-color: #355576;
+  border-radius: 20px;
+}
+
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
 }
 
 @keyframes gradient-animation-text {
