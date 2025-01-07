@@ -22,3 +22,25 @@
       background-position: 0% 50%;
     }
 }
+
+@keyframes scroll {
+  0%{
+      transform: translateX(0);
+  }
+  100%{
+      transform: translateX(-280px * 5);
+  }
+}
+
+
+@media (min-width: 1024px) {
+  @keyframes scroll {
+      0%{
+          transform: translateX(0);
+      }
+      100%{
+          transform: translateX(-600px * 5);
+      }
+  }
+  
+}
