@@ -1,0 +1,6 @@
+.title{
+    color: $accent-color;
+    @include widthAndPosition;
+    font-size: clamp(1.5rem, 1.2288rem + 1.3559vw, 2.5rem);
+    animation: gradient-animation-text 18s ease infinite; 
+}
