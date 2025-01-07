@@ -58,6 +58,20 @@
     
 }
 
+.slider-track-reverse{
+    @extend .slider-track;
+
+    animation: scroll-reverse 50s linear infinite;
+
+    &:hover{
+        animation-play-state: paused;
+    }
+    
+}
+
+
+
+
 .slide{
     // width: 245px;
     // @media (min-width: 1024px) {

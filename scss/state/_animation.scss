@@ -23,6 +23,8 @@
     }
 }
 
+//_autoslider
+
 @keyframes scroll {
   0%{
       transform: translateX(0);
@@ -32,15 +34,12 @@
   }
 }
 
-
-@media (min-width: 1024px) {
-  @keyframes scroll {
-      0%{
-          transform: translateX(0);
-      }
-      100%{
-          transform: translateX(-600px * 5);
-      }
+@keyframes scroll-reverse {
+  100%{
+    transform: translateX(280px * 5);
   }
-  
+  0%{
+    transform: translateX(0);
+  }
 }
+
