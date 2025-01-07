@@ -1,7 +1,4 @@
-section:not(#home){
-    // background: linear-gradient(300deg,#4f9da6, $dark-bg, $accent-color);
-    // background-size: 180% 180%;
-    // animation: gradient-animation 18s ease infinite;
+section{
     min-height: 100vh;
     @include width100;
 }
