@@ -138,7 +138,18 @@ marquee {
 .svgIcon {
   width: 24px;
   height: 24px;
+}
+
+.svgIconLeftHomeSlider {
   margin-left: 37px;
+}
+
+.container-svg-tech {
+  margin-top: 12px;
+}
+
+.svgIconLeftHomeCard {
+  margin-left: 20px;
 }
 
 .slider-container {
@@ -178,6 +189,7 @@ marquee {
 .slider-track, .slider-track-reverse {
   display: flex;
   width: 890vw;
+  border-radius: 20px;
 }
 @media (min-width: 435px) {
   .slider-track, .slider-track-reverse {
@@ -220,9 +232,6 @@ marquee {
 .slider-track-reverse {
   animation: scroll 50s linear reverse infinite;
 }
-.slider-track-reverse:hover {
-  animation-play-state: paused;
-}
 
 .slide {
   width: auto;
@@ -231,6 +240,9 @@ marquee {
   margin-left: 15px;
   perspective: 100px;
   position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .slide img {
   width: 100%;
@@ -279,9 +291,8 @@ marquee {
   top: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.7);
   width: 100%;
-  height: auto;
   border-radius: 20px;
 }
 
@@ -293,6 +304,21 @@ marquee {
   animation: gradient-animation-text 18s ease infinite;
   padding-left: 1.5rem;
   padding-top: 3rem;
+}
+
+.card-text-slider {
+  position: absolute;
+  top: 20%;
+  left: 16px;
+  width: 80%;
+}
+.card-text-slider p:first-child {
+  font-size: clamp(1.5rem, 0.9286rem + 2.8571vw, 2rem);
+  font-weight: bold;
+}
+.card-text-slider p:nth-child(2) {
+  font-size: 1.1rem;
+  margin-top: 4px;
 }
 
 main {
