@@ -148,11 +148,6 @@ marquee {
   margin-top: 2rem;
   border-radius: 20px;
 }
-@media (min-width: 1024px) {
-  .slider-container {
-    margin-top: 5rem;
-  }
-}
 
 .slider {
   margin: auto;
@@ -182,10 +177,34 @@ marquee {
 
 .slider-track, .slider-track-reverse {
   display: flex;
-  width: 750vw;
-  animation: scroll 50s linear infinite;
+  width: 890vw;
 }
-@media (min-width: 1024px) {
+@media (min-width: 435px) {
+  .slider-track, .slider-track-reverse {
+    width: 680vw;
+  }
+}
+@media (min-width: 500px) {
+  .slider-track, .slider-track-reverse {
+    width: 500vw;
+  }
+}
+@media (min-width: 728px) {
+  .slider-track, .slider-track-reverse {
+    width: 450vw;
+  }
+}
+@media (min-width: 1000px) {
+  .slider-track, .slider-track-reverse {
+    width: 330vw;
+  }
+}
+@media (min-width: 1200px) {
+  .slider-track, .slider-track-reverse {
+    width: 320vw;
+  }
+}
+@media (min-width: 1400px) {
   .slider-track, .slider-track-reverse {
     width: 350vw;
   }
@@ -194,16 +213,19 @@ marquee {
   animation-play-state: paused;
 }
 
+.slider-track-animation {
+  animation: scroll 50s linear infinite;
+}
+
 .slider-track-reverse {
-  animation: scroll-reverse 50s linear infinite;
+  animation: scroll 50s linear reverse infinite;
 }
 .slider-track-reverse:hover {
   animation-play-state: paused;
 }
 
 .slide {
-  width: calc(75vw - 15px);
-  max-width: 600px;
+  width: auto;
   display: flex;
   align-items: center;
   margin-left: 15px;
@@ -270,9 +292,7 @@ marquee {
   font-size: clamp(1.5rem, 1.2288rem + 1.3559vw, 2.5rem);
   animation: gradient-animation-text 18s ease infinite;
   padding-left: 1.5rem;
-}
-.title:first-child {
-  margin-top: 4.5rem;
+  padding-top: 3rem;
 }
 
 main {
@@ -310,14 +330,6 @@ main {
   }
   100% {
     transform: translateX(-1400px);
-  }
-}
-@keyframes scroll-reverse {
-  100% {
-    transform: translateX(1400px);
-  }
-  0% {
-    transform: translateX(0);
   }
 }
 #header-content nav ul li:hover {
