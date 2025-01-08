@@ -40,26 +40,42 @@
     display: flex;
     width: calc(89vw * 10);
     border-radius: 20px;
-    
+
     @media (min-width:435px) {
         width: calc(68vw * 10);
     }
 
     @media (min-width: 500px) {
-        width: calc(50vw * 10);
+        width: calc(63vw * 10);
     }
+
     @media (min-width: 728px){  
-        width: calc(45vw * 10);
+        width: calc(58vw * 10);
     }
     
-    @media (min-width: 1000px) {
-        width: calc(33vw * 10);
+    @media (min-width: 828px) {
+        width: calc(53vw * 10);
     }
+
+    @media (min-width: 1000px) {
+        width: calc(42vw * 10);    
+    }
+
     @media (min-width: 1200px) {
+        width: calc(37vw * 10);
+    }
+
+    @media (min-width:1500px) {
         width: calc(32vw * 10);
     }
-    @media (min-width: 1400px) {
-        width: calc(35vw * 10);
+
+    @media (min-width:1700px) {
+        width: calc(27vw * 10);
+    }
+
+    @media (min-width: 1900px) {
+        width: calc(22vw * 10);
+        max-width: 650vw;
     }
 
     &:hover{
@@ -79,20 +95,9 @@
     
 }
 
-
-
-
 .slide{
-    // width: 245px;
-    // @media (min-width: 1024px) {
-    //     width: 600px; 
-    // }
-    //width: calc(75vw - 15px);
-    //@media (min-width: 1024px) {
-    //    width: calc(35vw * 10);   
-    //}
-    //max-width: 600px;
     width: auto;
+    max-width: 670px;
     display: flex;
     align-items: center;
     margin-left: 15px;
