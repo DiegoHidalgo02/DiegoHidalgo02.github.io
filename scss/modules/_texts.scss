@@ -13,18 +13,30 @@
     left: 16px;
     width: 80%;
     height: 100%;
-    display: flex
-;
+    display: flex;
     flex-direction: column;
     justify-content: center;
 
     & p:first-child{
-        font-size: clamp(1.5rem, 0.1286rem + 6.8571vw, 3rem);
+        font-size: clamp(1.5rem, 0.1286rem + 6.8571vw, 2.8rem);
         font-weight: bold;
     }
 
     & p:nth-child(2){
-        font-size: clamp(1.1rem, 0.5514rem + 2.7429vw, 1.7rem);
+        font-size: clamp(1.1rem, 0.5514rem + 2.7429vw, 1.5rem);
+        margin-top: 4px;
+    }
+}
+
+.card-text-gallery{
+    @extend .card-text-slider;
+    & p:first-child{
+        font-size: clamp(1.5rem, -0.5rem + 10vw, 2rem);
+        font-weight: bold;
+    }
+
+    & p:nth-child(2){
+        font-size: clamp(1.1rem, 0.1rem + 5vw, 1.35rem);
         margin-top: 4px;
     }
 }
