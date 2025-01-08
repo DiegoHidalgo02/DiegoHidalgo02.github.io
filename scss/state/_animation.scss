@@ -33,13 +33,3 @@
       transform: translateX(-280px * 5);
   }
 }
-
-@keyframes scroll-reverse {
-  100%{
-    transform: translateX(280px * 5);
-  }
-  0%{
-    transform: translateX(0);
-  }
-}
-

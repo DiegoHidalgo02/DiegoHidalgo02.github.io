@@ -3,12 +3,9 @@
     place-items: center;
     overflow-x: hidden;
     margin-top: 2rem;
-
-    @media (min-width: 1024px) {
-        margin-top: 5rem;
-    }
     border-radius: 20px;
 }
+
 
 .slider{
     margin: auto;
@@ -46,11 +43,28 @@
     // @media (min-width: 1024px) {
     //   width: calc(600px * 10);  
     // }
-    width: calc(75vw * 10);
-    @media (min-width: 1024px) {
+    width: calc(89vw * 10);
+    
+    @media (min-width:435px) {
+        width: calc(68vw * 10);
+    }
+
+    @media (min-width: 500px) {
+        width: calc(50vw * 10);
+    }
+    @media (min-width: 728px){  
+        width: calc(45vw * 10);
+    }
+    
+    @media (min-width: 1000px) {
+        width: calc(33vw * 10);
+    }
+    @media (min-width: 1200px) {
+        width: calc(32vw * 10);
+    }
+    @media (min-width: 1400px) {
         width: calc(35vw * 10);
     }
-    animation: scroll 50s linear infinite;
 
     &:hover{
         animation-play-state: paused;
@@ -58,10 +72,14 @@
     
 }
 
+.slider-track-animation{
+    animation: scroll 50s linear infinite;
+}
+
 .slider-track-reverse{
     @extend .slider-track;
 
-    animation: scroll-reverse 50s linear infinite;
+    animation: scroll 50s linear reverse infinite;
 
     &:hover{
         animation-play-state: paused;
@@ -77,8 +95,12 @@
     // @media (min-width: 1024px) {
     //     width: 600px; 
     // }
-    width: calc(75vw - 15px);
-    max-width: 600px;
+    //width: calc(75vw - 15px);
+    //@media (min-width: 1024px) {
+    //    width: calc(35vw * 10);
+    //}
+    //max-width: 600px;
+    width: auto;
     display: flex;
     align-items: center;
     margin-left: 15px;
