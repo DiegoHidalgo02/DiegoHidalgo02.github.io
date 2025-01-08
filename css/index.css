@@ -11,7 +11,6 @@ body {
 
 header {
   width: 100%;
-  height: 65px;
   position: absolute;
 }
 
@@ -129,16 +128,26 @@ main {
   display: flex;
   justify-content: space-between;
 }
+@media (min-width: 1024px) {
+  #header-content nav ul {
+    width: 50%;
+    margin-left: auto;
+  }
+}
 #header-content nav ul li {
   font-weight: 600;
   font-size: clamp(0.875rem, 0.8411rem + 0.1695vw, 1rem);
-  width: 32.5%;
-  padding: 5px 0px;
+  padding: 10px 0px;
   text-align: center;
   border-radius: 20px;
   color: rgb(179, 179, 179);
   transition: all 0.4s ease-in-out;
   cursor: pointer;
+}
+@media (min-width: 1024px) {
+  #header-content nav {
+    width: 50%;
+  }
 }
 
 .svgIcon {
@@ -234,7 +243,7 @@ main {
 }
 @media (min-width: 1700px) {
   .slider-track, .slider-track-reverse {
-    width: 270vw;
+    width: 290vw;
   }
 }
 @media (min-width: 1900px) {
@@ -291,6 +300,7 @@ main {
   display: flex;
 }
 .slider-vs-container div {
+  user-select: none;
   padding: 10px 20px;
   position: relative;
   border-radius: 20px;
@@ -329,7 +339,7 @@ main {
   padding-top: 3rem;
 }
 
-.card-text-slider {
+.card-text-slider, .card-text-gallery {
   position: absolute;
   /* top: 20%; */
   left: 16px;
@@ -339,13 +349,50 @@ main {
   flex-direction: column;
   justify-content: center;
 }
-.card-text-slider p:first-child {
-  font-size: clamp(1.5rem, 0.1286rem + 6.8571vw, 3rem);
+.card-text-slider p:first-child, .card-text-gallery p:first-child {
+  font-size: clamp(1.5rem, 0.1286rem + 6.8571vw, 2.8rem);
   font-weight: bold;
 }
-.card-text-slider p:nth-child(2) {
-  font-size: clamp(1.1rem, 0.5514rem + 2.7429vw, 1.7rem);
+.card-text-slider p:nth-child(2), .card-text-gallery p:nth-child(2) {
+  font-size: clamp(1.1rem, 0.5514rem + 2.7429vw, 1.5rem);
   margin-top: 4px;
+}
+
+.card-text-gallery p:first-child {
+  font-size: clamp(1.5rem, -0.5rem + 10vw, 2rem);
+  font-weight: bold;
+}
+.card-text-gallery p:nth-child(2) {
+  font-size: clamp(1.1rem, 0.1rem + 5vw, 1.35rem);
+  margin-top: 4px;
+}
+
+.gallery-visualization {
+  display: none;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1500px;
+}
+
+.gallery-container {
+  display: grid;
+  margin: 2rem 1.5rem 0 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+@media (min-width: 1024px) {
+  .gallery-container {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 50px;
+  }
+}
+.gallery-container > div {
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.gallery-container img {
+  width: 100%;
 }
 
 @keyframes gradient-animation-text {
