@@ -6,3 +6,21 @@
     padding-left:1.5rem;
     padding-top: 3rem;
 }
+
+.card-text-slider{
+    position: absolute;
+    top: 20%;
+    left: 16px;
+    width: 80%;
+
+    & p:first-child{
+        font-size: clamp(1.5rem, 0.9286rem + 2.8571vw, 2rem);
+        font-weight: bold;
+    }
+
+    & p:nth-child(2){
+        font-size: 1.10rem;
+        margin-top: 4px;
+    }
+}
+
