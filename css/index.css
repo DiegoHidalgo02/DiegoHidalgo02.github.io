@@ -93,6 +93,12 @@ marquee {
   color: rgb(196, 196, 196);
 }
 
+main {
+  background: linear-gradient(300deg, #4f9da6, #1a0841, #ffad5a);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
 .button {
   padding: 10px 20px;
   background-color: #355576;
@@ -198,27 +204,43 @@ marquee {
 }
 @media (min-width: 500px) {
   .slider-track, .slider-track-reverse {
-    width: 500vw;
+    width: 630vw;
   }
 }
 @media (min-width: 728px) {
   .slider-track, .slider-track-reverse {
-    width: 450vw;
+    width: 580vw;
+  }
+}
+@media (min-width: 828px) {
+  .slider-track, .slider-track-reverse {
+    width: 530vw;
   }
 }
 @media (min-width: 1000px) {
   .slider-track, .slider-track-reverse {
-    width: 330vw;
+    width: 420vw;
   }
 }
 @media (min-width: 1200px) {
   .slider-track, .slider-track-reverse {
+    width: 370vw;
+  }
+}
+@media (min-width: 1500px) {
+  .slider-track, .slider-track-reverse {
     width: 320vw;
   }
 }
-@media (min-width: 1400px) {
+@media (min-width: 1700px) {
   .slider-track, .slider-track-reverse {
-    width: 350vw;
+    width: 270vw;
+  }
+}
+@media (min-width: 1900px) {
+  .slider-track, .slider-track-reverse {
+    width: 220vw;
+    max-width: 650vw;
   }
 }
 .slider-track:hover, .slider-track-reverse:hover {
@@ -235,6 +257,7 @@ marquee {
 
 .slide {
   width: auto;
+  max-width: 670px;
   display: flex;
   align-items: center;
   margin-left: 15px;
@@ -308,23 +331,21 @@ marquee {
 
 .card-text-slider {
   position: absolute;
-  top: 20%;
+  /* top: 20%; */
   left: 16px;
   width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .card-text-slider p:first-child {
-  font-size: clamp(1.5rem, 0.9286rem + 2.8571vw, 2rem);
+  font-size: clamp(1.5rem, 0.1286rem + 6.8571vw, 3rem);
   font-weight: bold;
 }
 .card-text-slider p:nth-child(2) {
-  font-size: 1.1rem;
+  font-size: clamp(1.1rem, 0.5514rem + 2.7429vw, 1.7rem);
   margin-top: 4px;
-}
-
-main {
-  background: linear-gradient(300deg, #4f9da6, #1a0841, #ffad5a);
-  background-size: 180% 180%;
-  animation: gradient-animation 18s ease infinite;
 }
 
 @keyframes gradient-animation-text {
