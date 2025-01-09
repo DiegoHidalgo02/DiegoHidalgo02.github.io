@@ -11,6 +11,7 @@
     margin: 2rem 1.5rem 0 1.5rem;
 
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 300px;
     gap: 15px;
     @media (min-width: 1024px) {
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -20,7 +21,6 @@
 
     & > div{
         margin: 0 auto;
-        border-radius: 20px;
         overflow: hidden;
     }
 
@@ -29,3 +29,47 @@
     }
 }
 
+.gallery-card{
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $accent-color;
+    border-radius: 20px;
+}
+
+.card-text{
+    width: 85%;
+
+    & .card-title{
+        font-size: 1.35rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+
+    & .card-subTitle{
+        margin-bottom: .6rem;
+    }
+
+    & .card-description{
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-top: 8%;
+    }
+
+    & .card-link{
+        display: block;
+        text-decoration: none;
+        color: $accent-color;
+        text-shadow: #fdad5d 1px 0 10px;
+        margin-top: 1rem;
+    }
+
+}
+
+.card-btn{
+    margin-top: auto;
+}

@@ -27,17 +27,3 @@
         margin-top: 4px;
     }
 }
-
-.card-text-gallery{
-    @extend .card-text-slider;
-    & p:first-child{
-        font-size: clamp(1.5rem, -0.5rem + 10vw, 2rem);
-        font-weight: bold;
-    }
-
-    & p:nth-child(2){
-        font-size: clamp(1.1rem, 0.1rem + 5vw, 1.35rem);
-        margin-top: 4px;
-    }
-}
-
