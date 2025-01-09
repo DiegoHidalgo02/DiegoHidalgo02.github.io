@@ -7,6 +7,7 @@
 body {
   font-family: "Funnel Display", sans-serif;
   margin: 0 auto;
+  color: rgb(187, 187, 187);
 }
 
 header {
@@ -30,7 +31,6 @@ section {
 #home {
   width: 100%;
   height: 100dvh;
-  color: rgb(196, 196, 196);
   background-color: #1a0841;
 }
 
@@ -104,6 +104,7 @@ main {
   border-radius: 20px;
   box-shadow: rgba(53, 86, 118, 0.0980392157) 0px 1px 1px, rgba(53, 86, 118, 0.0980392157) 0px 2px 2px, rgba(53, 86, 118, 0.0980392157) 0px 4px 4px, rgba(53, 86, 118, 0.0980392157) 0px 8px 8px, rgba(53, 86, 118, 0.0980392157) 0px 16px 16px;
   cursor: pointer;
+  text-align: center;
 }
 
 .button:active {
@@ -278,6 +279,7 @@ main {
 }
 .slide img {
   width: 100%;
+  height: 100%;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
@@ -339,7 +341,7 @@ main {
   padding-top: 3rem;
 }
 
-.card-text-slider, .card-text-gallery {
+.card-text-slider {
   position: absolute;
   /* top: 20%; */
   left: 16px;
@@ -349,21 +351,12 @@ main {
   flex-direction: column;
   justify-content: center;
 }
-.card-text-slider p:first-child, .card-text-gallery p:first-child {
+.card-text-slider p:first-child {
   font-size: clamp(1.5rem, 0.1286rem + 6.8571vw, 2.8rem);
   font-weight: bold;
 }
-.card-text-slider p:nth-child(2), .card-text-gallery p:nth-child(2) {
+.card-text-slider p:nth-child(2) {
   font-size: clamp(1.1rem, 0.5514rem + 2.7429vw, 1.5rem);
-  margin-top: 4px;
-}
-
-.card-text-gallery p:first-child {
-  font-size: clamp(1.5rem, -0.5rem + 10vw, 2rem);
-  font-weight: bold;
-}
-.card-text-gallery p:nth-child(2) {
-  font-size: clamp(1.1rem, 0.1rem + 5vw, 1.35rem);
   margin-top: 4px;
 }
 
@@ -378,6 +371,7 @@ main {
   display: grid;
   margin: 2rem 1.5rem 0 1.5rem;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: 300px;
   gap: 15px;
 }
 @media (min-width: 1024px) {
@@ -388,11 +382,50 @@ main {
 }
 .gallery-container > div {
   margin: 0 auto;
-  border-radius: 20px;
   overflow: hidden;
 }
 .gallery-container img {
   width: 100%;
+}
+
+.gallery-card {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ffad5a;
+  border-radius: 20px;
+}
+
+.card-text {
+  width: 85%;
+}
+.card-text .card-title {
+  font-size: 1.35rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.card-text .card-subTitle {
+  margin-bottom: 0.6rem;
+}
+.card-text .card-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 8%;
+}
+.card-text .card-link {
+  display: block;
+  text-decoration: none;
+  color: #ffad5a;
+  text-shadow: #fdad5d 1px 0 10px;
+  margin-top: 1rem;
+}
+
+.card-btn {
+  margin-top: auto;
 }
 
 @keyframes gradient-animation-text {
