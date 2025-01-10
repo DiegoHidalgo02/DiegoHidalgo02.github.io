@@ -128,6 +128,7 @@ main {
   padding: 0;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 0;
 }
 @media (min-width: 1024px) {
   #header-content nav ul {
@@ -353,16 +354,17 @@ main {
 }
 
 .gallery-container {
+  width: 80%;
   display: grid;
-  margin: 2rem 1.5rem 0 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-auto-rows: 320px;
+  margin: 2rem auto 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-auto-rows: 350px;
   gap: 15px;
 }
 @media (min-width: 1024px) {
   .gallery-container {
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
+    gap: 25px;
   }
 }
 .gallery-container > div {
@@ -403,12 +405,23 @@ main {
 .card-text .card-link {
   display: block;
   text-decoration: none;
-  color: #ffad5a;
-  text-shadow: #fdad5d 1px 0 10px;
   margin-top: 1rem;
+  color: #355576;
+}
+.card-text .card-link:hover {
+  color: #fdad5d;
+  text-shadow: #fdad5d 1px 0 10px;
 }
 .card-text hr {
   width: 85%;
+  height: 2px;
+  background-color: #ffad5a;
+  margin-top: 0;
+  margin-bottom: 0;
+  border: none;
+  outline: none;
+  border-top: 0;
+  box-shadow: #fdad5d 1px 0 10px;
 }
 
 .card-btn {
