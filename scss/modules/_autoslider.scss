@@ -1,5 +1,6 @@
 .slider-container{
     display: grid;
+    position: relative;
     place-items: center;
     overflow-x: hidden;
     margin-top: 2rem;
@@ -14,26 +15,6 @@
     place-items: center;
     overflow: hidden;
     border-radius: 20px;
-
-    &::before, &::after{
-        background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255, 255, 255, 0) 100%);
-        content: '';
-        height: 100%;
-        position: absolute;
-        width: 15%;
-        z-index: 2;
-    }
-    
-    &::before{
-        left: 0;
-        top: 0;
-    }
-    
-    &::after{
-        right: 0;
-        top: 0;
-        transform: rotateZ(180deg);
-    }
 }
 
 .slider-track{
@@ -90,12 +71,11 @@
 
 .slider-track-reverse{
     @extend .slider-track;
-
     animation: scroll 50s linear reverse infinite;
-    
 }
 
 .slide{
+    z-index: 100;
     width: auto;
     max-width: 670px;
     display: flex;
@@ -113,7 +93,7 @@
         box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px
     }
 
-    & img:hover{
+    &:hover{
         transform: translateZ(20px);
         transition: transform 1s;
     }
