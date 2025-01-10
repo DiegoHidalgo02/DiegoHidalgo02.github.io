@@ -381,7 +381,8 @@ main {
   flex-direction: column;
   border: 1px solid #ffad5a;
   border-radius: 20px;
-  background-color: #1a0841;
+  background-color: rgba(0, 0, 0, 0.226);
+  backdrop-filter: blur(15px);
 }
 
 .card-text .card-title {
