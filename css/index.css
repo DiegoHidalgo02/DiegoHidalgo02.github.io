@@ -356,9 +356,13 @@ main {
   width: 80%;
   display: grid;
   margin: 2rem auto 0 auto;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   grid-auto-rows: 350px;
   gap: 15px;
+}
+@media (min-width: 728px) {
+  .gallery-container {
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  }
 }
 @media (min-width: 1024px) {
   .gallery-container {
