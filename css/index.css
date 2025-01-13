@@ -162,7 +162,7 @@ main {
 }
 
 .container-svg-tech {
-  margin-top: 12px;
+  margin-top: 0.5rem;
 }
 
 .svgIconLeftHomeCard {
@@ -259,15 +259,12 @@ main {
   margin-left: 15px;
   perspective: 100px;
   position: relative;
-  overflow: hidden;
   border-radius: 20px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .slide img {
   width: 100%;
   height: 100%;
   border-radius: 20px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 .slide:hover {
   transform: translateZ(20px);
@@ -331,19 +328,21 @@ main {
   position: absolute;
   /* top: 20%; */
   left: 16px;
-  width: 80%;
+  width: 95%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+.card-text-slider p {
+  margin-bottom: 0.46rem;
+}
 .card-text-slider p:first-child {
-  font-size: clamp(1.5rem, 0.1286rem + 6.8571vw, 2.8rem);
+  font-size: clamp(1.35rem, 0.1286rem + 6.8571vw, 2.8rem);
   font-weight: bold;
 }
 .card-text-slider p:nth-child(2) {
   font-size: clamp(1.1rem, 0.5514rem + 2.7429vw, 1.5rem);
-  margin-top: 4px;
 }
 
 .gallery-visualization {
