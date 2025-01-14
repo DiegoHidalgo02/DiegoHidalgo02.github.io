@@ -161,6 +161,10 @@ main {
   margin-left: 37px;
 }
 
+.svgIconLeftModal:not(:first-of-type) {
+  margin-left: 1.5rem;
+}
+
 .container-svg-tech {
   margin-top: 0.5rem;
 }
