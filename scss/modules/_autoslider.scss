@@ -1,0 +1,131 @@
+.slider-container{
+    display: grid;
+    position: relative;
+    place-items: center;
+    overflow-x: hidden;
+    margin-top: 2rem;
+    border-radius: 20px;
+}
+
+
+.slider{
+    margin: auto;
+    position: relative;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+
+
+.slider-track{
+    display: flex;
+    width: calc(89vw * 10);
+    border-radius: 20px;
+
+    @media (min-width: 728px) {
+        width: calc(60vw * 10);
+    }
+
+    @media (min-width:1024px) {
+        width: calc(45vw * 10);
+    }
+
+    @media (min-width:1100px) and (max-width: 1350px){
+        width: calc(40vw * 10);
+    }
+
+    @media (min-width:1350px) and (max-width: 1500px){
+        width: calc(35vw * 10);
+    }
+
+    @media (min-width: 1505px) {
+        width: calc(30vw * 10);
+    }
+
+
+    &:hover{
+        animation-play-state: paused;
+    }
+    
+}
+
+.slider-track-animation{
+    animation: scroll 50s linear infinite;
+}
+
+.slider-track-reverse{
+    @extend .slider-track;
+    animation: scroll 50s linear reverse infinite;
+}
+
+.slide{
+    width: auto;
+    max-width: 670px;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    perspective: 100px;
+    position: relative;
+    border-radius: 20px; 
+    & img{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+
+    &:active{
+        border: 2px solid $accent-color;
+    }
+    
+}
+
+
+
+.slider-visualization{
+    @include width100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.slider-vs-container{
+    border: 1px solid $primary-color;
+    border-radius: 20px;
+    display: flex;
+    // background-color: lighten($primary-color, 10%);
+    & div{
+        user-select: none;
+        padding: 10px 20px;
+        position: relative;
+        border-radius: 20px;
+        font-weight: 600;
+        font-size: clamp(0.875rem, 0.8411rem + 0.1695vw, 1rem);
+        & input{
+            width: 100%;
+            position: absolute;
+            left: 0;
+            opacity: 0;
+            cursor: pointer;
+        };
+
+        &:has(input:checked){
+         background-color: $primary-color;
+         border-radius: 20px;   
+        };
+    }
+
+}
+
+.dark-overlay{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .7);
+    width: 100%;
+    border-radius: 20px
+}

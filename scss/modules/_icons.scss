@@ -1,5 +1,20 @@
 .svgIcon{
     width: 24px;
     height: 24px;
-    margin-left: 37px;
+}
+
+.svgIconLeftHomeSlider{
+    margin-left: 37px; 
+}
+
+.svgIconLeftModal:not(:first-of-type){
+    margin-left: 1.5rem;
+}
+
+.container-svg-tech{
+    margin-top: .5rem
+}
+
+.svgIconLeftHomeCard{
+    margin-left: 20px;
 }
