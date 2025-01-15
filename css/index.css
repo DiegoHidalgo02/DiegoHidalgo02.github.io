@@ -120,7 +120,7 @@ main {
   margin-top: 2.5rem;
   padding: 5px;
   border: 2px solid #355576;
-  border-radius: 20px;
+  border-radius: 25px;
   box-shadow: rgba(53, 86, 118, 0.0980392157) 0px 1px 1px, rgba(53, 86, 118, 0.0980392157) 0px 2px 2px, rgba(53, 86, 118, 0.0980392157) 0px 4px 4px, rgba(53, 86, 118, 0.0980392157) 0px 8px 8px, rgba(53, 86, 118, 0.0980392157) 0px 16px 16px;
 }
 #header-content nav ul {
@@ -132,7 +132,7 @@ main {
 }
 @media (min-width: 1024px) {
   #header-content nav ul {
-    width: 50%;
+    width: 65%;
     margin-left: auto;
   }
 }
@@ -392,6 +392,16 @@ main {
   backdrop-filter: blur(15px);
 }
 
+.card-link, .card-text .card-link {
+  display: block;
+  text-decoration: none;
+  color: #355576;
+}
+.card-link:hover {
+  color: #fdad5d;
+  text-shadow: #fdad5d 1px 0 10px;
+}
+
 .card-text .card-title {
   font-size: 1.35rem;
   font-weight: bold;
@@ -411,14 +421,7 @@ main {
   margin-top: 8%;
 }
 .card-text .card-link {
-  display: block;
-  text-decoration: none;
   margin-top: 1rem;
-  color: #355576;
-}
-.card-text .card-link:hover {
-  color: #fdad5d;
-  text-shadow: #fdad5d 1px 0 10px;
 }
 .card-text hr {
   width: 85%;
@@ -434,6 +437,69 @@ main {
 
 .card-btn {
   margin-top: auto;
+}
+
+.modal-header {
+  border: 0;
+}
+
+.card-img-top {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#modal-technologies {
+  margin-bottom: 0.5rem;
+}
+#modal-technologies p {
+  margin-bottom: 0.5rem;
+}
+
+.close {
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1;
+  /* color: #000; */
+  /* text-shadow: 0 1px 0 #fff; */
+  /* opacity: .5; */
+  border: none;
+  color: #ffb900;
+  text-shadow: none;
+  opacity: 1;
+}
+
+button.close {
+  outline: none;
+  color: #fdad5d;
+  opacity: 1;
+}
+
+.close:focus, .close:hover {
+  color: #fdad5d;
+  text-shadow: #fdad5d 1px 0 10px;
+  opacity: 1;
+}
+
+.close:active {
+  scale: 0.94;
+}
+
+#ProjectType {
+  margin-left: 1.5rem;
+}
+
+.modal-content {
+  border: 1px solid #ffad5a;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.226);
+  backdrop-filter: blur(15px);
+}
+
+.modal-body {
+  margin-bottom: 1rem;
+  padding: 1.5rem;
 }
 
 @keyframes gradient-animation-text {
