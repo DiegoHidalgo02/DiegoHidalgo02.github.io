@@ -36,3 +36,25 @@ slider_vs_container.addEventListener("click", (e)=>{
     }
 
 })
+
+
+const projects_content = document.getElementById("projects-content");
+
+projects_content.addEventListener("click", e =>{
+
+    const card_slider = e.target.parentNode;
+
+    if(card_slider.classList.contains("slide")){
+
+        const id_card_slider = card_slider.dataset.idformodal;
+
+        console.log(id_card_slider);
+
+        const card_gallery = document.getElementById(`gc-${id_card_slider}`);
+
+        modal_compilation(card_gallery);
+
+    }
+
+})
+

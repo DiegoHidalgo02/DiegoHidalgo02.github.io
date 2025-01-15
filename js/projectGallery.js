@@ -27,39 +27,48 @@ function createSvgIcons(card) {
 
 const project = document.createElement("span");
 
+
+function modal_compilation(card){
+    const projectTypeText = document.querySelector("#ProjectType");
+    const modal_technologies = document.querySelector("#modal-technologies");
+
+    const modal_title = document.querySelector("#exampleModalLongTitle");
+    modal_title.textContent = card.dataset.title
+
+    project.innerHTML = "";
+    project.textContent = card.dataset.projectype;
+    projectTypeText.append(project);
+
+    const modal_img = document.querySelector(".card-img-top")
+    modal_img.src = card.dataset.img;
+    modal_img.alt = card.dataset.alt;
+
+    modal_technologies.innerHTML = '';
+
+    const technologiesTitle = document.createElement("p")
+    technologiesTitle.textContent = "Technologies";
+    modal_technologies.append(technologiesTitle);
+    
+    createSvgIcons(card);
+    
+    const modal_description = document.querySelector("#modal-description")
+    modal_description.textContent = card.dataset.description;
+
+    const modal_git_link = document.querySelector("#modal-git-link");
+    modal_git_link.href = card.dataset.github;
+
+
+}
+
 gallery_container.addEventListener("click", (e) => {
 
     const button =  e.target.classList.contains("button")
     const card = e.target.parentNode;
-    const modal_technologies = document.querySelector("#modal-technologies");
-    const projectTypeText = document.querySelector("#ProjectType");
-
 
     if (button){
-        const modal_title = document.querySelector("#exampleModalLongTitle");
-        modal_title.textContent = card.dataset.title
 
-        project.innerHTML = "";
-        project.textContent = card.dataset.projectype;
-        projectTypeText.append(project);
-
-        const modal_img = document.querySelector(".card-img-top")
-        modal_img.src = card.dataset.img;
-        modal_img.alt = card.dataset.alt;
-
-        modal_technologies.innerHTML = '';
-
-        const technologiesTitle = document.createElement("p")
-        technologiesTitle.textContent = "Technologies";
-        modal_technologies.append(technologiesTitle);
+        modal_compilation(card);
         
-        createSvgIcons(card);
-        
-        const modal_description = document.querySelector("#modal-description")
-        modal_description.textContent = card.dataset.description;
-
-        const modal_git_link = document.querySelector("#modal-git-link");
-        modal_git_link.href = card.dataset.github;
     }
 
 })
