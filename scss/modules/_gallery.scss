@@ -44,6 +44,19 @@
     backdrop-filter: blur(15px);
 }
 
+.card-link{
+    display: block;
+    text-decoration: none;
+    //color: $accent-color;
+    //text-shadow: #fdad5d 1px 0 10px;
+    color: $primary-color;
+
+    &:hover{
+        color: #fdad5d;
+        text-shadow: #fdad5d 1px 0 10px;
+    }
+}
+
 .card-text{
     
 
@@ -70,17 +83,8 @@
     }
 
     & .card-link{
-        display: block;
-        text-decoration: none;
-        //color: $accent-color;
-        //text-shadow: #fdad5d 1px 0 10px;
+        @extend .card-link;
         margin-top: 1rem;
-        color: $primary-color;
-
-        &:hover{
-            color: #fdad5d;
-            text-shadow: #fdad5d 1px 0 10px;
-        }
     }
 
     & hr{
