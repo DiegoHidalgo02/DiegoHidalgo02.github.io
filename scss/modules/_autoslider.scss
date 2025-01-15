@@ -17,47 +17,33 @@
     border-radius: 20px;
 }
 
+
+
 .slider-track{
     display: flex;
     width: calc(89vw * 10);
     border-radius: 20px;
 
-    @media (min-width:435px) {
-        width: calc(68vw * 10);
+    @media (min-width: 728px) {
+        width: calc(60vw * 10);
     }
 
-    @media (min-width: 500px) {
-        width: calc(63vw * 10);
+    @media (min-width:1024px) {
+        width: calc(45vw * 10);
     }
 
-    @media (min-width: 728px){  
-        width: calc(58vw * 10);
-    }
-    
-    @media (min-width: 828px) {
-        width: calc(53vw * 10);
+    @media (min-width:1100px) and (max-width: 1350px){
+        width: calc(40vw * 10);
     }
 
-    @media (min-width: 1000px) {
-        width: calc(42vw * 10);    
+    @media (min-width:1350px) and (max-width: 1500px){
+        width: calc(35vw * 10);
     }
 
-    @media (min-width: 1200px) {
-        width: calc(37vw * 10);
+    @media (min-width: 1505px) {
+        width: calc(30vw * 10);
     }
 
-    @media (min-width:1500px) {
-        width: calc(32vw * 10);
-    }
-
-    @media (min-width:1700px) {
-        width: calc(29vw * 10);
-    }
-
-    @media (min-width: 1900px) {
-        width: calc(22vw * 10);
-        max-width: 650vw;
-    }
 
     &:hover{
         animation-play-state: paused;
@@ -75,7 +61,6 @@
 }
 
 .slide{
-    z-index: 100;
     width: auto;
     max-width: 670px;
     display: flex;
@@ -90,9 +75,8 @@
         border-radius: 20px;
     }
 
-    &:hover{
-        transform: translateZ(20px);
-        transition: transform 1s;
+    &:active{
+        border: 2px solid $accent-color;
     }
     
 }
@@ -136,6 +120,7 @@
 }
 
 .dark-overlay{
+    pointer-events: none;
     position: absolute;
     top: 0;
     right: 0;
