@@ -45,6 +45,7 @@ gallery_container.addEventListener("click", (e) => {
 
         const modal_img = document.querySelector(".card-img-top")
         modal_img.src = card.dataset.img;
+        modal_img.alt = card.dataset.alt;
 
         modal_technologies.innerHTML = '';
 
