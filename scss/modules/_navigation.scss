@@ -47,9 +47,14 @@
             padding: 10px 0px;
             text-align: center;
             border-radius: 20px;
-            color: rgb(179, 179, 179);
             transition: all .4s ease-in-out;
             cursor: pointer;
+
+            & a{
+                color: $all-text-color;
+            }
+
+            
         }
 
         .button{
