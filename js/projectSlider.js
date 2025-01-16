@@ -7,6 +7,10 @@ const galleryOption = document.getElementById("gallery");
 const sliderOption = document.getElementById("slider");
 sliderOption.checked = true;
 
+const carousel = document.querySelector(".infinite-carousel");
+const carouselInner = carousel.querySelector(".infinite-carousel > div");
+const carouselContent = Array.from(carouselInner.children);
+
 
 slider_vs_container.addEventListener("click", (e)=>{
 
@@ -58,3 +62,13 @@ projects_content.addEventListener("click", e =>{
 
 })
 
+
+carouselContent.forEach(item => {
+
+    const duplicateItem = item.cloneNode(true);
+    
+    carouselInner.appendChild(duplicateItem);
+
+    carouselInner.style.animation = "move 12s linear infinite";
+
+})
