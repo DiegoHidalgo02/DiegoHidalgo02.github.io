@@ -3,13 +3,13 @@ $primary-color: #355576;
 $accent-color: #ffad5a;
 $dark-bg: #1a0841;
 $shadow-color: #35567619;
-$all-text-color:rgb(187, 187, 187);
+$all-text-color:rgb(179, 179, 179);
 $width100: 100%;
 
- @mixin blurBackground{
+@mixin blurBackground{
     background-color: rgba(0, 0, 0, 0.226);
     backdrop-filter: blur(15px);
- }
+}
 
 @mixin width100{
     width: $width100;

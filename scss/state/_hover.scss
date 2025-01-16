@@ -1,8 +1,9 @@
-#header-content nav ul li:hover{
+#header-content nav ul li a:hover{
     color:$accent-color ;
+    text-decoration: none;
 }
 
-#header-content nav ul li:active{
+#header-content nav ul li a:active{
     
     color: $accent-color;
     text-shadow: #fdad5d 1px 0 10px;

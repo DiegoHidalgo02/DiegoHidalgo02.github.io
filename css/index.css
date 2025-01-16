@@ -7,12 +7,13 @@
 body {
   font-family: "Funnel Display", sans-serif;
   margin: 0 auto;
-  color: rgb(187, 187, 187);
+  color: rgb(179, 179, 179);
 }
 
 header {
   width: 100%;
-  position: absolute;
+  position: fixed;
+  z-index: 100;
 }
 
 #header-content {
@@ -58,6 +59,11 @@ section {
   background-repeat: repeat;
   background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1450 1015%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cmask id=%22b%22 x=%220%22 y=%220%22 width=%221450%22 height=%221015%22%3E%3Cpath fill=%22url(%23a)%22 d=%22M0 0h1450v1015H0z%22%2F%3E%3C%2Fmask%3E%3Cpath fill=%22%231a0841%22 d=%22M0 0h1450v1015H0z%22%2F%3E%3Cg style=%22transform-origin:center center%22 stroke=%22%234f9da6%22 stroke-width=%221.45%22 mask=%22url(%23b)%22%3E%3Cpath fill=%22none%22 d=%22M0 0h58v58H0zM58 0h58v58H58zM116 0h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6b8%22 d=%22M174 0h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M232 0h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da60a%22 d=%22M290 0h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M348 0h58v58h-58zM406 0h58v58h-58zM464 0h58v58h-58zM522 0h58v58h-58zM580 0h58v58h-58zM638 0h58v58h-58zM696 0h58v58h-58zM754 0h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da69c%22 d=%22M812 0h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da69a%22 d=%22M870 0h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M928 0h58v58h-58zM986 0h58v58h-58zM1044 0h58v58h-58zM1102 0h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da644%22 d=%22M1160 0h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1218 0h58v58h-58zM1276 0h58v58h-58zM1334 0h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6c7%22 d=%22M1392 0h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da61e%22 d=%22M0 58h58v58H0z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da618%22 d=%22M58 58h58v58H58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M116 58h58v58h-58zM174 58h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6ae%22 d=%22M232 58h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M290 58h58v58h-58zM348 58h58v58h-58zM406 58h58v58h-58zM464 58h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6c6%22 d=%22M522 58h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M580 58h58v58h-58zM638 58h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da690%22 d=%22M696 58h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da65e%22 d=%22M754 58h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M812 58h58v58h-58zM870 58h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da66e%22 d=%22M928 58h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M986 58h58v58h-58zM1044 58h58v58h-58zM1102 58h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da683%22 d=%22M1160 58h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1218 58h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da646%22 d=%22M1276 58h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1334 58h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da65d%22 d=%22M1392 58h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M0 116h58v58H0zM58 116h58v58H58zM116 116h58v58h-58zM174 116h58v58h-58zM232 116h58v58h-58zM290 116h58v58h-58zM348 116h58v58h-58zM406 116h58v58h-58zM464 116h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da65d%22 d=%22M522 116h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6ba%22 d=%22M580 116h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da632%22 d=%22M638 116h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M696 116h58v58h-58zM754 116h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da65b%22 d=%22M812 116h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M870 116h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da607%22 d=%22M928 116h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da680%22 d=%22M986 116h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1044 116h58v58h-58zM1102 116h58v58h-58zM1160 116h58v58h-58zM1218 116h58v58h-58zM1276 116h58v58h-58zM1334 116h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da67c%22 d=%22M1392 116h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M0 174h58v58H0z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6da%22 d=%22M58 174h58v58H58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M116 174h58v58h-58zM174 174h58v58h-58zM232 174h58v58h-58zM290 174h58v58h-58zM348 174h58v58h-58zM406 174h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da664%22 d=%22M464 174h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da60d%22 d=%22M522 174h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da621%22 d=%22M580 174h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M638 174h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6b3%22 d=%22M696 174h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M754 174h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6da%22 d=%22M812 174h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M870 174h58v58h-58zM928 174h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6fe%22 d=%22M986 174h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1044 174h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da678%22 d=%22M1102 174h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1160 174h58v58h-58zM1218 174h58v58h-58zM1276 174h58v58h-58zM1334 174h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6c9%22 d=%22M1392 174h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M0 232h58v58H0z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da66a%22 d=%22M58 232h58v58H58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M116 232h58v58h-58zM174 232h58v58h-58zM232 232h58v58h-58zM290 232h58v58h-58zM348 232h58v58h-58zM406 232h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6ab%22 d=%22M464 232h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M522 232h58v58h-58zM580 232h58v58h-58zM638 232h58v58h-58zM696 232h58v58h-58zM754 232h58v58h-58zM812 232h58v58h-58zM870 232h58v58h-58zM928 232h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6e7%22 d=%22M986 232h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1044 232h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da62b%22 d=%22M1102 232h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1160 232h58v58h-58zM1218 232h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da62c%22 d=%22M1276 232h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1334 232h58v58h-58zM1392 232h58v58h-58zM0 290h58v58H0zM58 290h58v58H58zM116 290h58v58h-58zM174 290h58v58h-58zM232 290h58v58h-58zM290 290h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da604%22 d=%22M348 290h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M406 290h58v58h-58zM464 290h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6d4%22 d=%22M522 290h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M580 290h58v58h-58zM638 290h58v58h-58zM696 290h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6ca%22 d=%22M754 290h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da66b%22 d=%22M812 290h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M870 290h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6bd%22 d=%22M928 290h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6c3%22 d=%22M986 290h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1044 290h58v58h-58zM1102 290h58v58h-58zM1160 290h58v58h-58zM1218 290h58v58h-58zM1276 290h58v58h-58zM1334 290h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6ec%22 d=%22M1392 290h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M0 348h58v58H0z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da657%22 d=%22M58 348h58v58H58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M116 348h58v58h-58zM174 348h58v58h-58zM232 348h58v58h-58zM290 348h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6cc%22 d=%22M348 348h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M406 348h58v58h-58zM464 348h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6ec%22 d=%22M522 348h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M580 348h58v58h-58zM638 348h58v58h-58zM696 348h58v58h-58zM754 348h58v58h-58zM812 348h58v58h-58zM870 348h58v58h-58zM928 348h58v58h-58zM986 348h58v58h-58zM1044 348h58v58h-58zM1102 348h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da643%22 d=%22M1160 348h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1218 348h58v58h-58zM1276 348h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da617%22 d=%22M1334 348h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6e0%22 d=%22M1392 348h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da65c%22 d=%22M0 406h58v58H0z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da670%22 d=%22M58 406h58v58H58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M116 406h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da617%22 d=%22M174 406h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M232 406h58v58h-58zM290 406h58v58h-58zM348 406h58v58h-58zM406 406h58v58h-58zM464 406h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da632%22 d=%22M522 406h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6fa%22 d=%22M580 406h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M638 406h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da600%22 d=%22M696 406h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6d9%22 d=%22M754 406h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M812 406h58v58h-58zM870 406h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6c7%22 d=%22M928 406h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M986 406h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6fd%22 d=%22M1044 406h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1102 406h58v58h-58zM1160 406h58v58h-58zM1218 406h58v58h-58zM1276 406h58v58h-58zM1334 406h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da664%22 d=%22M1392 406h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da638%22 d=%22M0 464h58v58H0z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da650%22 d=%22M58 464h58v58H58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da674%22 d=%22M116 464h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M174 464h58v58h-58zM232 464h58v58h-58zM290 464h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da64c%22 d=%22M348 464h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M406 464h58v58h-58zM464 464h58v58h-58zM522 464h58v58h-58zM580 464h58v58h-58zM638 464h58v58h-58zM696 464h58v58h-58zM754 464h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da694%22 d=%22M812 464h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6d1%22 d=%22M870 464h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M928 464h58v58h-58zM986 464h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da678%22 d=%22M1044 464h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1102 464h58v58h-58zM1160 464h58v58h-58zM1218 464h58v58h-58zM1276 464h58v58h-58zM1334 464h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da606%22 d=%22M1392 464h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M0 522h58v58H0z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da637%22 d=%22M58 522h58v58H58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M116 522h58v58h-58zM174 522h58v58h-58zM232 522h58v58h-58zM290 522h58v58h-58zM348 522h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da679%22 d=%22M406 522h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da628%22 d=%22M464 522h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6eb%22 d=%22M522 522h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6e5%22 d=%22M580 522h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M638 522h58v58h-58zM696 522h58v58h-58zM754 522h58v58h-58zM812 522h58v58h-58zM870 522h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6a3%22 d=%22M928 522h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M986 522h58v58h-58zM1044 522h58v58h-58zM1102 522h58v58h-58zM1160 522h58v58h-58zM1218 522h58v58h-58zM1276 522h58v58h-58zM1334 522h58v58h-58zM1392 522h58v58h-58zM0 580h58v58H0zM58 580h58v58H58zM116 580h58v58h-58zM174 580h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da665%22 d=%22M232 580h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M290 580h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6fc%22 d=%22M348 580h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M406 580h58v58h-58zM464 580h58v58h-58zM522 580h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da63e%22 d=%22M580 580h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M638 580h58v58h-58zM696 580h58v58h-58zM754 580h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da626%22 d=%22M812 580h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M870 580h58v58h-58zM928 580h58v58h-58zM986 580h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6cd%22 d=%22M1044 580h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1102 580h58v58h-58zM1160 580h58v58h-58zM1218 580h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6d7%22 d=%22M1276 580h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da619%22 d=%22M1334 580h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1392 580h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6eb%22 d=%22M0 638h58v58H0z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M58 638h58v58H58zM116 638h58v58h-58zM174 638h58v58h-58zM232 638h58v58h-58zM290 638h58v58h-58zM348 638h58v58h-58zM406 638h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6fd%22 d=%22M464 638h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M522 638h58v58h-58zM580 638h58v58h-58zM638 638h58v58h-58zM696 638h58v58h-58zM754 638h58v58h-58zM812 638h58v58h-58zM870 638h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da656%22 d=%22M928 638h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M986 638h58v58h-58zM1044 638h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da66e%22 d=%22M1102 638h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6c2%22 d=%22M1160 638h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1218 638h58v58h-58zM1276 638h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da69e%22 d=%22M1334 638h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1392 638h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6f0%22 d=%22M0 696h58v58H0z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M58 696h58v58H58zM116 696h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6c0%22 d=%22M174 696h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M232 696h58v58h-58zM290 696h58v58h-58zM348 696h58v58h-58zM406 696h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da625%22 d=%22M464 696h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M522 696h58v58h-58zM580 696h58v58h-58zM638 696h58v58h-58zM696 696h58v58h-58zM754 696h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6fb%22 d=%22M812 696h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6ed%22 d=%22M870 696h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M928 696h58v58h-58zM986 696h58v58h-58zM1044 696h58v58h-58zM1102 696h58v58h-58zM1160 696h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6da%22 d=%22M1218 696h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1276 696h58v58h-58zM1334 696h58v58h-58zM1392 696h58v58h-58zM0 754h58v58H0zM58 754h58v58H58zM116 754h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6d7%22 d=%22M174 754h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M232 754h58v58h-58zM290 754h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da65b%22 d=%22M348 754h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da66d%22 d=%22M406 754h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M464 754h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da62e%22 d=%22M522 754h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6fe%22 d=%22M580 754h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M638 754h58v58h-58zM696 754h58v58h-58zM754 754h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6cb%22 d=%22M812 754h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da651%22 d=%22M870 754h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M928 754h58v58h-58zM986 754h58v58h-58zM1044 754h58v58h-58zM1102 754h58v58h-58zM1160 754h58v58h-58zM1218 754h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da656%22 d=%22M1276 754h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1334 754h58v58h-58zM1392 754h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da690%22 d=%22M0 812h58v58H0z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da618%22 d=%22M58 812h58v58H58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6b7%22 d=%22M116 812h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M174 812h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da68c%22 d=%22M232 812h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M290 812h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da60e%22 d=%22M348 812h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M406 812h58v58h-58zM464 812h58v58h-58zM522 812h58v58h-58zM580 812h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da619%22 d=%22M638 812h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6c0%22 d=%22M696 812h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M754 812h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6fa%22 d=%22M812 812h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M870 812h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da674%22 d=%22M928 812h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M986 812h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da69f%22 d=%22M1044 812h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1102 812h58v58h-58zM1160 812h58v58h-58zM1218 812h58v58h-58zM1276 812h58v58h-58zM1334 812h58v58h-58zM1392 812h58v58h-58zM0 870h58v58H0zM58 870h58v58H58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6cf%22 d=%22M116 870h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da697%22 d=%22M174 870h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M232 870h58v58h-58zM290 870h58v58h-58zM348 870h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6b6%22 d=%22M406 870h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6de%22 d=%22M464 870h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M522 870h58v58h-58zM580 870h58v58h-58zM638 870h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da660%22 d=%22M696 870h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M754 870h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6fc%22 d=%22M812 870h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M870 870h58v58h-58zM928 870h58v58h-58zM986 870h58v58h-58zM1044 870h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6c8%22 d=%22M1102 870h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da67f%22 d=%22M1160 870h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6d2%22 d=%22M1218 870h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1276 870h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da60d%22 d=%22M1334 870h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6d0%22 d=%22M1392 870h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da692%22 d=%22M0 928h58v58H0z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M58 928h58v58H58zM116 928h58v58h-58zM174 928h58v58h-58zM232 928h58v58h-58zM290 928h58v58h-58zM348 928h58v58h-58zM406 928h58v58h-58zM464 928h58v58h-58zM522 928h58v58h-58zM580 928h58v58h-58zM638 928h58v58h-58zM696 928h58v58h-58zM754 928h58v58h-58zM812 928h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6a9%22 d=%22M870 928h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M928 928h58v58h-58zM986 928h58v58h-58zM1044 928h58v58h-58zM1102 928h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6cd%22 d=%22M1160 928h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1218 928h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da645%22 d=%22M1276 928h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1334 928h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da689%22 d=%22M1392 928h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M0 986h58v58H0zM58 986h58v58H58zM116 986h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da619%22 d=%22M174 986h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M232 986h58v58h-58zM290 986h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da615%22 d=%22M348 986h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M406 986h58v58h-58zM464 986h58v58h-58zM522 986h58v58h-58zM580 986h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da67b%22 d=%22M638 986h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da611%22 d=%22M696 986h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6ae%22 d=%22M754 986h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M812 986h58v58h-58zM870 986h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6c2%22 d=%22M928 986h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da65e%22 d=%22M986 986h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6ac%22 d=%22M1044 986h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1102 986h58v58h-58zM1160 986h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da671%22 d=%22M1218 986h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1276 986h58v58h-58zM1334 986h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3Cpath fill=%22%234f9da6cb%22 d=%22M1392 986h58v58h-58z%22 transform=%22skewY(12)%22%2F%3E%3C%2Fg%3E%3Cdefs%3E%3CradialGradient id=%22a%22%3E%3Cstop offset=%220%22 stop-color=%22%23fff%22 stop-opacity=%22.7%22%2F%3E%3Cstop offset=%2275%25%22 stop-color=%22%23fff%22 stop-opacity=%220%22%2F%3E%3C%2FradialGradient%3E%3C%2Fdefs%3E%3C%2Fsvg%3E");
 }
+@media (min-width: 1024px) {
+  #home-content .button {
+    display: none;
+  }
+}
 
 /*Home Text*/
 #titleName {
@@ -82,18 +88,21 @@ section {
 }
 
 /*SLIDER HARD SKILLS*/
-marquee {
+.swiper-container {
   width: 250px;
   margin-top: 1.4rem;
   border-radius: 20px;
+  overflow: hidden;
 }
 
-#projects-content {
-  color: rgb(196, 196, 196);
+.swiper-wrapper {
+  -webkit-transition-timing-function: linear !important;
+  -o-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
 }
 
 main {
-  background: linear-gradient(300deg, #4f9da6, #1a0841, #ffad5a);
+  background: linear-gradient(300deg, #4f9da6, #355576, #1a0841, #1a0841, #ffad5a, #ffad5a);
   background-size: 180% 180%;
   animation: gradient-animation 18s ease infinite;
 }
@@ -105,35 +114,62 @@ main {
   box-shadow: rgba(53, 86, 118, 0.0980392157) 0px 1px 1px, rgba(53, 86, 118, 0.0980392157) 0px 2px 2px, rgba(53, 86, 118, 0.0980392157) 0px 4px 4px, rgba(53, 86, 118, 0.0980392157) 0px 8px 8px, rgba(53, 86, 118, 0.0980392157) 0px 16px 16px;
   cursor: pointer;
   text-align: center;
+  color: rgb(179, 179, 179);
+}
+.button:hover {
+  color: rgb(179, 179, 179);
+  text-decoration: none;
 }
 
 .button:active {
   transform: scale(0.993);
 }
 
-#downloadCV {
-  margin-top: 2rem;
-}
-
 #header-content nav {
+  display: flex;
   width: 70%;
   margin-top: 2.5rem;
   padding: 5px;
   border: 2px solid #355576;
   border-radius: 25px;
   box-shadow: rgba(53, 86, 118, 0.0980392157) 0px 1px 1px, rgba(53, 86, 118, 0.0980392157) 0px 2px 2px, rgba(53, 86, 118, 0.0980392157) 0px 4px 4px, rgba(53, 86, 118, 0.0980392157) 0px 8px 8px, rgba(53, 86, 118, 0.0980392157) 0px 16px 16px;
+  background-color: rgba(0, 0, 0, 0.226);
+  backdrop-filter: blur(15px);
+}
+#header-content nav #nav-title {
+  display: none;
+  color: #ffad5a;
+  text-shadow: #fdad5d 1px 0 10px;
+  margin-left: 0.7rem;
+  margin-top: 2px;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+@media (min-width: 1024px) {
+  #header-content nav #nav-title {
+    display: block;
+  }
 }
 #header-content nav ul {
+  width: 100%;
   list-style: none;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-bottom: 0;
+}
+@media (min-width: 728px) {
+  #header-content nav ul {
+    margin: 0 auto;
+    width: 45%;
+  }
 }
 @media (min-width: 1024px) {
   #header-content nav ul {
-    width: 65%;
+    justify-content: space-between;
+    width: 72%;
     margin-left: auto;
+    margin-right: 0px;
   }
 }
 #header-content nav ul li {
@@ -142,9 +178,24 @@ main {
   padding: 10px 0px;
   text-align: center;
   border-radius: 20px;
-  color: rgb(179, 179, 179);
   transition: all 0.4s ease-in-out;
   cursor: pointer;
+}
+#header-content nav ul li a {
+  color: rgb(179, 179, 179);
+}
+#header-content nav ul .button {
+  display: none;
+}
+@media (min-width: 1024px) {
+  #header-content nav ul .button {
+    display: block;
+  }
+}
+@media (orientation: landscape) and (max-width: 600px) {
+  #header-content nav {
+    display: none;
+  }
 }
 @media (min-width: 1024px) {
   #header-content nav {
@@ -303,7 +354,7 @@ main {
   font-size: clamp(1.5rem, 1.2288rem + 1.3559vw, 2.5rem);
   animation: gradient-animation-text 18s ease infinite;
   padding-left: 1.5rem;
-  padding-top: 3rem;
+  padding-top: 10rem;
 }
 
 .card-text-slider {
@@ -439,9 +490,6 @@ main {
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 1;
-  /* color: #000; */
-  /* text-shadow: 0 1px 0 #fff; */
-  /* opacity: .5; */
   border: none;
   color: #ffb900;
   text-shadow: none;
@@ -511,11 +559,12 @@ button.close {
     transform: translateX(-1400px);
   }
 }
-#header-content nav ul li:hover {
+#header-content nav ul li a:hover {
   color: #ffad5a;
+  text-decoration: none;
 }
 
-#header-content nav ul li:active {
+#header-content nav ul li a:active {
   color: #ffad5a;
   text-shadow: #fdad5d 1px 0 10px;
 }

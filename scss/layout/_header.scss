@@ -1,6 +1,7 @@
 header {
     @include width100;
-    position: absolute;
+    position: fixed;
+    z-index: 100;
 }
 
 #header-content {
