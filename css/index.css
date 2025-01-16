@@ -87,20 +87,6 @@ section {
   }
 }
 
-/*SLIDER HARD SKILLS*/
-.swiper-container {
-  width: 250px;
-  margin-top: 1.4rem;
-  border-radius: 20px;
-  overflow: hidden;
-}
-
-.swiper-wrapper {
-  -webkit-transition-timing-function: linear !important;
-  -o-transition-timing-function: linear !important;
-  transition-timing-function: linear !important;
-}
-
 main {
   background: linear-gradient(300deg, #4f9da6, #355576, #1a0841, #1a0841, #ffad5a, #ffad5a);
   background-size: 180% 180%;
@@ -231,6 +217,8 @@ main {
   overflow-x: hidden;
   margin-top: 2rem;
   border-radius: 20px;
+  -webkit-mask: linear-gradient(90deg, transparent, #fff 2%, #fff 98%, transparent);
+  mask: linear-gradient(90deg, transparent, #fff 2%, #fff 98%, transparent);
 }
 
 .slider {
@@ -345,6 +333,23 @@ main {
   background: rgba(0, 0, 0, 0.7);
   width: 100%;
   border-radius: 20px;
+}
+
+.infinite-carousel {
+  width: 250px;
+  overflow: hidden;
+  margin: 2rem 0;
+  -webkit-mask: linear-gradient(90deg, transparent, #fff 30%, #fff 80%, transparent);
+  mask: linear-gradient(90deg, transparent, #fff 30%, #fff 80%, transparent);
+}
+
+.infinite-carousel > div {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 3rem;
+  list-style: none;
 }
 
 .title {
@@ -557,6 +562,11 @@ button.close {
   }
   100% {
     transform: translateX(-1400px);
+  }
+}
+@keyframes move {
+  to {
+    transform: translate(calc(-50% - 1.5em));
   }
 }
 #header-content nav ul li a:hover {
