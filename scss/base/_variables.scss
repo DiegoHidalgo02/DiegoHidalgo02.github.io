@@ -6,6 +6,11 @@ $shadow-color: #35567619;
 $all-text-color:rgb(187, 187, 187);
 $width100: 100%;
 
+ @mixin blurBackground{
+    background-color: rgba(0, 0, 0, 0.226);
+    backdrop-filter: blur(15px);
+ }
+
 @mixin width100{
     width: $width100;
 }

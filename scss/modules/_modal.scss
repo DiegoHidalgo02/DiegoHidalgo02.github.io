@@ -53,10 +53,7 @@ button.close{
 .modal-content{
     border: 1px solid $accent-color;
     border-radius: 20px;
-
-    // background-color: $dark-bg;
-    background-color: rgba(0, 0, 0, 0.226);
-    backdrop-filter: blur(15px);
+    @include blurBackground;
 
 }
 
