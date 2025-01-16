@@ -1,4 +1,5 @@
 #header-content nav {
+    display: flex;
     width: 70%;
     margin-top: 2.5rem;
     padding: 5px;
@@ -7,16 +8,37 @@
     box-shadow: $shadow-color 0px 1px 1px, $shadow-color 0px 2px 2px, 
                 $shadow-color 0px 4px 4px, $shadow-color 0px 8px 8px, 
                 $shadow-color 0px 16px 16px;
+    @include blurBackground;
+    
+    #nav-title{
+        display: none;
+        color: $accent-color;
+        text-shadow: #fdad5d 1px 0 10px;
+        margin-left: .7rem;
+        margin-top:2px ;
+        margin-bottom: 0;
+        cursor: pointer;
+        @media (min-width: 1024px) {
+            display: block;
+        }
+    }
     
     ul {
+        width: 100%;
         list-style: none;
         padding: 0;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         margin-bottom: 0;
+        @media (min-width: 728px) {
+            margin: 0 auto  ;
+            width: 45%;
+        }
         @media (min-width: 1024px) {
-            width: 65%;
+            justify-content: space-between;
+            width: 72%;
             margin-left: auto;
+            margin-right: 0px;
         }
         
         li {
@@ -29,6 +51,17 @@
             transition: all .4s ease-in-out;
             cursor: pointer;
         }
+
+        .button{
+            display: none;
+            @media(min-width: 1024px) {
+                display: block;
+            }
+        }
+    }
+
+    @media (orientation: landscape) and (max-width: 600px) {
+        display: none;
     }
 
     @media (min-width: 1024px) {
