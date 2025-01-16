@@ -5,6 +5,21 @@
     overflow-x: hidden;
     margin-top: 2rem;
     border-radius: 20px;
+    -webkit-mask: linear-gradient(
+        90deg,
+        transparent,
+        #fff 2%, 
+        #fff 98%,
+        transparent
+    );
+
+    mask: linear-gradient(
+        90deg,
+        transparent,
+        #fff 2%, 
+        #fff 98%,
+        transparent
+    );  
 }
 
 
@@ -128,4 +143,35 @@
     background: rgba(0, 0, 0, .7);
     width: 100%;
     border-radius: 20px
+}
+
+
+.infinite-carousel{
+    width: 250px;
+    overflow: hidden;
+    margin: 2rem 0;
+    -webkit-mask: linear-gradient(
+        90deg,
+        transparent,
+        #fff 30%, 
+        #fff 80%,
+        transparent
+    );
+
+    mask: linear-gradient(
+        90deg,
+        transparent,
+        #fff 30%, 
+        #fff 80%,
+        transparent
+    );
+}
+
+.infinite-carousel > div {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 3rem;
+    list-style: none;
 }

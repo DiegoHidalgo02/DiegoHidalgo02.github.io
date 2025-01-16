@@ -33,3 +33,9 @@
       transform: translateX(-280px * 5);
   }
 }
+
+@keyframes move{
+  to{
+    transform: translate(calc(-50% - 1.5em))
+  }
+}
