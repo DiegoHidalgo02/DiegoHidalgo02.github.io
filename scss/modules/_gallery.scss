@@ -52,7 +52,7 @@
     color: $primary-color;
 
     &:hover{
-        color: #fdad5d;
+        color: $accent-color;
         text-shadow: #fdad5d 1px 0 10px;
     }
 }
