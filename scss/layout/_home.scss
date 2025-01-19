@@ -1,19 +1,8 @@
 #home{
     @include width100;
     height: 100dvh;
-    background-color: $dark-bg;
 }
-  
 
-#home::after{
-    z-index: 1;
-    content: "";
-    position: absolute;
-    @include width100;
-    background: linear-gradient(to top, transparent, $dark-bg, $dark-bg);
-    height: 20px;
-    margin-top: -7px;
-}
 
 #home-content{
     @include widthAndPosition;
@@ -23,6 +12,18 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    -webkit-mask: radial-gradient(
+        circle at center,
+        #fff 50%, 
+        transparent 80%
+    );
+
+    mask: radial-gradient(
+        circle at center,
+        #fff 50%, 
+        transparent 80%
+    );
 
     background-size: cover;
     background-position: center center;
@@ -57,19 +58,3 @@
         margin-top: 25px;
      }
 }
-
-/*SLIDER HARD SKILLS*/
-
-.swiper-container{
-    width: 250px;
-    margin-top: 1.4rem;
-    border-radius: 20px;
-    overflow: hidden;
-}
-
-.swiper-wrapper {
-    -webkit-transition-timing-function:linear!important; 
-    -o-transition-timing-function:linear!important;
-    transition-timing-function:linear!important; 
-    
-} 
