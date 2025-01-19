@@ -69,6 +69,6 @@ carouselContent.forEach(item => {
     
     carouselInner.appendChild(duplicateItem);
 
-    carouselInner.style.animation = "move 12s linear infinite";
+    carouselInner.style.animation = "move 20s linear infinite";
 
 })
