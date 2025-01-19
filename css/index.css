@@ -32,17 +32,6 @@ section {
 #home {
   width: 100%;
   height: 100dvh;
-  background-color: #1a0841;
-}
-
-#home::after {
-  z-index: 1;
-  content: "";
-  position: absolute;
-  width: 100%;
-  background: linear-gradient(to top, transparent, #1a0841, #1a0841);
-  height: 20px;
-  margin-top: -7px;
 }
 
 #home-content {
@@ -54,6 +43,8 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  -webkit-mask: radial-gradient(circle at center, #fff 50%, transparent 80%);
+  mask: radial-gradient(circle at center, #fff 50%, transparent 80%);
   background-size: cover;
   background-position: center center;
   background-repeat: repeat;
@@ -88,9 +79,10 @@ section {
 }
 
 main {
-  background: linear-gradient(300deg, #4f9da6, #355576, #1a0841, #1a0841, #ffad5a, #ffad5a);
-  background-size: 180% 180%;
-  animation: gradient-animation 18s ease infinite;
+  background: #1a0841;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.178) 1px, transparent 0);
+  background-size: 15px 15px;
+  background-position: -19px -19px;
 }
 
 .button {
@@ -357,9 +349,9 @@ main {
   margin: 0 auto;
   width: min(100%, 1500px);
   font-size: clamp(1.5rem, 1.2288rem + 1.3559vw, 2.5rem);
-  animation: gradient-animation-text 18s ease infinite;
   padding-left: 1.5rem;
-  padding-top: 10rem;
+  padding-top: 6rem;
+  text-shadow: #fdad5d 1px 0 10px;
 }
 
 .card-text-slider {
@@ -533,18 +525,6 @@ button.close {
   padding: 1.5rem;
 }
 
-@keyframes gradient-animation-text {
-  0% {
-    color: #1a0841;
-  }
-  50% {
-    color: #ffad5a;
-    text-shadow: #fdad5d 1px 0 10px;
-  }
-  100% {
-    color: #1a0841;
-  }
-}
 @keyframes gradient-animation {
   0% {
     background-position: 0% 50%;
