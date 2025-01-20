@@ -7,9 +7,46 @@ const galleryOption = document.getElementById("gallery");
 const sliderOption = document.getElementById("slider");
 sliderOption.checked = true;
 
-const carousel = document.querySelector(".infinite-carousel");
-const carouselInner = carousel.querySelector(".infinite-carousel > div");
-const carouselContent = Array.from(carouselInner.children);
+const carousels = Array.from(document.querySelectorAll(".infinite-carousel"));
+
+
+function createCarousel(carouselContent, carouselInner, animation_time, type_animation){
+
+    carouselContent.forEach(item => {
+
+        const duplicateItem = item.cloneNode(true);
+    
+        carouselInner.appendChild(duplicateItem);
+
+        carouselInner.style.animation = `move ${animation_time}s ${type_animation} infinite`;     
+
+    })
+
+}
+
+carousels.forEach(carousel => {
+
+    const carouselInner = carousel.querySelector(".infinite-carousel > div");
+
+    const carouselContent = Array.from(carouselInner.children);
+
+
+    if(carousels.indexOf(carousel) === 1){
+        
+        createCarousel(carouselContent, carouselInner, 80, "linear");
+    
+    }else if(carousels.indexOf(carousel) === 2){
+
+        createCarousel(carouselContent, carouselInner, 80, "linear reverse");
+
+    }else{
+
+        createCarousel(carouselContent, carouselInner, 20, "linear");
+    }
+
+    
+
+});
 
 
 slider_vs_container.addEventListener("click", (e)=>{
@@ -63,12 +100,6 @@ projects_content.addEventListener("click", e =>{
 })
 
 
-carouselContent.forEach(item => {
 
-    const duplicateItem = item.cloneNode(true);
-    
-    carouselInner.appendChild(duplicateItem);
 
-    carouselInner.style.animation = "move 20s linear infinite";
 
-})
