@@ -36,7 +36,7 @@
     padding: 18px;
     display: flex;
     flex-direction: column;
-    border: 1px solid $accent-color;
+    border: 0px solid $accent-color;
     border-radius: 20px;
     @include blurBackground;
 }
