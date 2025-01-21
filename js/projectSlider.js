@@ -54,19 +54,15 @@ slider_vs_container.addEventListener("click", (e)=>{
 
         if(e.target.id === "gallery"){
 
-            carouselOption.checked = false;
-
             infinite_carousels.forEach(element => {
                 element.style.display = "none";
             })
 
             gallery_visualization.style.display = "block";
 
-        }else{
+        }else if(e.target.id === "carousel"){
 
             gallery_visualization.style.display = "none";
-
-            galleryOption.checked = false;
 
             infinite_carousels.forEach(element => {
 
