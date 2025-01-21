@@ -25,7 +25,8 @@
         width: 50%;
         opacity: 0;
         border-radius: 20px;
-        font-size: .85rem;   
+        font-size: .85rem;
+        cursor: pointer;
     }
 
     & input#carousel{
@@ -88,6 +89,10 @@
 #home-carousel .infinite-carousel{
     width: 250px;
     margin: 2rem auto;
+    
+    @media (orientation: landscape) and (max-height: 700px) {
+        margin: .5rem auto 1rem auto;
+    }
     -webkit-mask: linear-gradient(
         90deg,
         transparent,
@@ -110,7 +115,12 @@
 
     & > div{
         height: calc((100vh - ( 148.797px + 68px + 32px))/2.25);
+        @media (orientation: landscape) and (max-height: 700px) {
+            height: auto;
+        };
     }
+
+
 }
 
 
@@ -124,6 +134,10 @@
 
 .slide{
     height: 100%;
+    @media (orientation: landscape) and (max-height: 700px) {
+        height: auto;
+        width: 300px;
+    }
     display: flex;
     align-items: center;
     position: relative;
