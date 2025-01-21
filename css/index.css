@@ -182,7 +182,7 @@ main {
     display: block;
   }
 }
-@media (orientation: landscape) and (max-width: 600px) {
+@media (orientation: landscape) and (max-height: 700px) {
   #header-content nav {
     display: none;
   }
@@ -257,6 +257,7 @@ main {
   opacity: 0;
   border-radius: 20px;
   font-size: 0.85rem;
+  cursor: pointer;
 }
 .slider-vs-container input#carousel {
   left: 0;
@@ -312,12 +313,22 @@ main {
   -webkit-mask: linear-gradient(90deg, transparent, #fff 30%, #fff 80%, transparent);
   mask: linear-gradient(90deg, transparent, #fff 30%, #fff 80%, transparent);
 }
+@media (orientation: landscape) and (max-height: 700px) {
+  #home-carousel .infinite-carousel {
+    margin: 0.5rem auto 1rem auto;
+  }
+}
 
 #project-carousel .infinite-carousel {
   margin: 2rem 0 0 0;
 }
 #project-carousel .infinite-carousel > div {
   height: calc((100vh - 248.797px) / 2.25);
+}
+@media (orientation: landscape) and (max-height: 700px) {
+  #project-carousel .infinite-carousel > div {
+    height: auto;
+  }
 }
 
 #home-carousel .infinite-carousel > div {
@@ -334,6 +345,12 @@ main {
   align-items: center;
   position: relative;
   border-radius: 20px;
+}
+@media (orientation: landscape) and (max-height: 700px) {
+  .slide {
+    height: auto;
+    width: 300px;
+  }
 }
 .slide img {
   width: 100%;
@@ -369,7 +386,7 @@ main {
   position: absolute;
   pointer-events: none;
   left: 16px;
-  width: 95%;
+  width: 65%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -379,11 +396,16 @@ main {
   margin-bottom: 0.46rem;
 }
 .card-text-slider p:first-child {
-  font-size: clamp(0.65rem, -0.7522rem + 7.4783vw, 2.8rem);
+  font-size: clamp(1.5rem, 1.3333rem + 1.0667vw, 3rem);
   font-weight: bold;
 }
 .card-text-slider p:nth-child(2) {
-  font-size: clamp(1.1rem, 0.5514rem + 2.7429vw, 1.5rem);
+  font-size: clamp(0.82rem, 0.7278rem + 0.5902vw, 1.65rem);
+}
+@media (orientation: landscape) and (max-height: 700px) {
+  .card-text-slider {
+    width: 93%;
+  }
 }
 
 .gallery-visualization {
