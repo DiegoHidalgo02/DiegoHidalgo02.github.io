@@ -231,29 +231,62 @@ main {
   border: 1px solid #355576;
   border-radius: 20px;
   display: flex;
-}
-.slider-vs-container div {
-  user-select: none;
-  padding: 7px 20px;
   position: relative;
-  border-radius: 20px;
-  font-weight: 500;
-  font-size: clamp(0.875rem, 0.8411rem + 0.1695vw, 0.5rem);
 }
-.slider-vs-container div input {
-  width: 100%;
+.slider-vs-container input {
+  z-index: 2;
   position: absolute;
-  left: 0;
+  height: 100%;
+  width: 50%;
   opacity: 0;
-  cursor: pointer;
+  border-radius: 20px;
+  font-size: 0.85rem;
 }
-.slider-vs-container div:has(input:checked) {
+.slider-vs-container input#carousel {
+  left: 0;
+}
+.slider-vs-container input#gallery {
+  right: 0;
+}
+.slider-vs-container label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+  z-index: 2;
+  padding: 8px 16px;
+  width: 90px;
+}
+.slider-vs-container #selected {
+  position: absolute;
+  width: 90px;
+  height: 100%;
   background-color: #355576;
   border-radius: 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  transition: all 0.4s;
+}
+.slider-vs-container input#carousel:checked ~ #selected {
+  transform: translateX(0);
+}
+.slider-vs-container input#gallery:checked ~ #selected {
+  transform: translateX(100%);
 }
 
 .infinite-carousel {
   overflow: hidden;
+}
+
+.infinite-carousel > div {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  list-style: none;
 }
 
 #home-carousel .infinite-carousel {
@@ -266,14 +299,8 @@ main {
 #project-carousel .infinite-carousel {
   margin: 2rem 0 0 0;
 }
-
-.infinite-carousel > div {
+#project-carousel .infinite-carousel > div {
   height: calc((100vh - 248.797px) / 2.25);
-  width: max-content;
-  display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
-  list-style: none;
 }
 
 #home-carousel .infinite-carousel > div {
