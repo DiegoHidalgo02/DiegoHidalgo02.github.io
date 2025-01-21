@@ -1,11 +1,10 @@
 const slider_vs_container = document.querySelector(".slider-vs-container");
-const slider_container = document.querySelectorAll(".slider-container");
+const infinite_carousels = document.querySelectorAll("#project-carousel > .infinite-carousel");
 
 const gallery_visualization = document.querySelector(".gallery-visualization");
 const galleryOption = document.getElementById("gallery");
 
-const sliderOption = document.getElementById("slider");
-sliderOption.checked = true;
+const carouselOption = document.getElementById("carousel");
 
 const carousels = Array.from(document.querySelectorAll(".infinite-carousel"));
 
@@ -55,10 +54,12 @@ slider_vs_container.addEventListener("click", (e)=>{
 
         if(e.target.id === "gallery"){
 
-            sliderOption.checked = false;
-            slider_container.forEach(element => {
+            carouselOption.checked = false;
+
+            infinite_carousels.forEach(element => {
                 element.style.display = "none";
             })
+
             gallery_visualization.style.display = "block";
 
         }else{
@@ -67,8 +68,10 @@ slider_vs_container.addEventListener("click", (e)=>{
 
             galleryOption.checked = false;
 
-            slider_container.forEach(element => {
+            infinite_carousels.forEach(element => {
+
                 element.style.display = "grid";
+
             })
 
         }

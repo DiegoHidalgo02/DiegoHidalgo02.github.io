@@ -14,26 +14,56 @@
     border: 1px solid $primary-color;
     border-radius: 20px;
     display: flex;
+    position: relative;
     // background-color: lighten($primary-color, 10%);
-    & div{
-        user-select: none;
-        padding: 7px 20px;
-        position: relative;
+    & input{
+        z-index: 2;
+        position: absolute;
+        height: 100%;
+        width: 50%;
+        opacity: 0;
         border-radius: 20px;
-        font-weight: 500;
-        font-size: clamp(0.875rem, 0.8411rem + 0.1695vw, .5rem);
-        & input{
-            width: 100%;
-            position: absolute;
-            left: 0;
-            opacity: 0;
-            cursor: pointer;
-        };
+        font-size: .85rem;   
+    }
 
-        &:has(input:checked){
-         background-color: $primary-color;
-         border-radius: 20px;   
-        };
+    & input#carousel{
+        left: 0;
+    }
+
+    & input#gallery{
+        right: 0;
+    }
+
+    & label{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0;
+        z-index: 2;
+        padding: 8px 16px;
+        width: 90px;
+    }
+
+    & #selected {
+        position: absolute;
+        width: 90px;
+        height: 100%;
+        background-color: $primary-color;
+        border-radius: 20px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        transition: all .4s;
+    };
+
+    & input#carousel:checked ~ #selected{
+        transform: translateX(0);
+    }
+
+    & input#gallery:checked ~ #selected{
+        transform: translateX(100%);
     }
 
 }
@@ -41,6 +71,15 @@
 .infinite-carousel{
     overflow: hidden;
 }
+
+.infinite-carousel > div {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    list-style: none;
+}
+
 
 
 #home-carousel .infinite-carousel{
@@ -65,16 +104,12 @@
 
 #project-carousel .infinite-carousel{
     margin: 2rem 0 0 0;
+
+    & > div{
+        height: calc((100vh - ( 148.797px + 68px + 32px))/2.25);
+    }
 }
 
-.infinite-carousel > div {
-    height: calc((100vh - ( 148.797px + 68px + 32px))/2.25);
-    width: max-content;
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    list-style: none;
-}
 
 #home-carousel .infinite-carousel > div{
     gap: 2.75rem;
