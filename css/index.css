@@ -288,6 +288,14 @@ main {
   z-index: 1;
   transition: all 0.35s ease-in-out;
 }
+.slider-vs-container input#carousel:checked + label {
+  color: #ffad5a;
+  text-shadow: #fdad5d 1px 0 10px;
+}
+.slider-vs-container input#gallery:checked + label {
+  color: #ffad5a;
+  text-shadow: #fdad5d 1px 0 10px;
+}
 .slider-vs-container input#carousel:checked ~ #selected {
   transform: translateX(0);
 }
