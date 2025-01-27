@@ -62,6 +62,16 @@
         transition: all .35s ease-in-out;
     };
 
+    & input#carousel:checked + label{
+        color: $accent-color;
+        text-shadow: #fdad5d 1px 0 10px;
+    }
+
+    & input#gallery:checked + label{
+        color: $accent-color;
+        text-shadow: #fdad5d 1px 0 10px;
+    }
+
     & input#carousel:checked ~ #selected{
         transform: translateX(0);
     }
