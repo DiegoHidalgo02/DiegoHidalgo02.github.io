@@ -1,15 +1,51 @@
 const slider_vs_container = document.querySelector(".slider-vs-container");
-const slider_container = document.querySelectorAll(".slider-container");
+const infinite_carousels = document.querySelectorAll("#project-carousel > .infinite-carousel");
 
 const gallery_visualization = document.querySelector(".gallery-visualization");
 const galleryOption = document.getElementById("gallery");
 
-const sliderOption = document.getElementById("slider");
-sliderOption.checked = true;
+const carouselOption = document.getElementById("carousel");
 
-const carousel = document.querySelector(".infinite-carousel");
-const carouselInner = carousel.querySelector(".infinite-carousel > div");
-const carouselContent = Array.from(carouselInner.children);
+const carousels = Array.from(document.querySelectorAll(".infinite-carousel"));
+
+
+function createCarousel(carouselContent, carouselInner, animation_time, type_animation){
+
+    carouselContent.forEach(item => {
+
+        const duplicateItem = item.cloneNode(true);
+    
+        carouselInner.appendChild(duplicateItem);
+
+        carouselInner.style.animation = `move ${animation_time}s ${type_animation} infinite`;     
+
+    })
+
+}
+
+carousels.forEach(carousel => {
+
+    const carouselInner = carousel.querySelector(".infinite-carousel > div");
+
+    const carouselContent = Array.from(carouselInner.children);
+
+
+    if(carousels.indexOf(carousel) === 1){
+        
+        createCarousel(carouselContent, carouselInner, 80, "linear");
+    
+    }else if(carousels.indexOf(carousel) === 2){
+
+        createCarousel(carouselContent, carouselInner, 80, "linear reverse");
+
+    }else{
+
+        createCarousel(carouselContent, carouselInner, 20, "linear");
+    }
+
+    
+
+});
 
 
 slider_vs_container.addEventListener("click", (e)=>{
@@ -18,20 +54,20 @@ slider_vs_container.addEventListener("click", (e)=>{
 
         if(e.target.id === "gallery"){
 
-            sliderOption.checked = false;
-            slider_container.forEach(element => {
+            infinite_carousels.forEach(element => {
                 element.style.display = "none";
             })
+
             gallery_visualization.style.display = "block";
 
-        }else{
+        }else if(e.target.id === "carousel"){
 
             gallery_visualization.style.display = "none";
 
-            galleryOption.checked = false;
+            infinite_carousels.forEach(element => {
 
-            slider_container.forEach(element => {
                 element.style.display = "grid";
+
             })
 
         }
@@ -63,12 +99,6 @@ projects_content.addEventListener("click", e =>{
 })
 
 
-carouselContent.forEach(item => {
 
-    const duplicateItem = item.cloneNode(true);
-    
-    carouselInner.appendChild(duplicateItem);
 
-    carouselInner.style.animation = "move 20s linear infinite";
 
-})
