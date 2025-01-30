@@ -1,0 +1,11 @@
+#me-photo{
+    width: 80%;
+    margin: 0 auto;
+    @include blurBackground;
+    padding: 8px;
+    @include outer-border-radius(16px, 8px);
+
+    & img {
+        border-radius: 16px;
+    }
+}
