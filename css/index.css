@@ -10,6 +10,10 @@ body {
   color: rgb(179, 179, 179);
 }
 
+img {
+  width: 100%;
+}
+
 header {
   width: 100%;
   position: fixed;
@@ -24,7 +28,34 @@ header {
   align-items: center;
 }
 
-section {
+#me-photo {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25), inset 0 0 10px rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  padding: 8px;
+  border-radius: 24px;
+}
+#me-photo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.03));
+  pointer-events: none;
+}
+#me-photo img {
+  border-radius: 16px;
+}
+
+section:not(#home) {
+  padding-top: 7.5rem;
   min-height: 100vh;
   width: 100%;
 }
@@ -88,7 +119,7 @@ main {
 .button {
   padding: 10px 20px;
   background-color: #355576;
-  border-radius: 20px;
+  border-radius: 24px;
   box-shadow: rgba(53, 86, 118, 0.0980392157) 0px 1px 1px, rgba(53, 86, 118, 0.0980392157) 0px 2px 2px, rgba(53, 86, 118, 0.0980392157) 0px 4px 4px, rgba(53, 86, 118, 0.0980392157) 0px 8px 8px, rgba(53, 86, 118, 0.0980392157) 0px 16px 16px;
   cursor: pointer;
   text-align: center;
@@ -107,8 +138,8 @@ main {
   display: flex;
   width: 70%;
   margin-top: 2rem;
-  padding: 5px;
-  border-radius: 25px;
+  padding: 6.5px;
+  border-radius: 30.5px;
   position: relative;
   background-color: rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -167,7 +198,7 @@ main {
   font-size: clamp(0.875rem, 0.8411rem + 0.1695vw, 1rem);
   padding: 10px 0px;
   text-align: center;
-  border-radius: 20px;
+  border-radius: 24px;
   transition: all 0.4s ease-in-out;
   cursor: pointer;
 }
@@ -229,7 +260,7 @@ main {
 
 .slider-vs-container {
   border: 1px solid #355576;
-  border-radius: 20px;
+  border-radius: 24px;
   display: flex;
   position: relative;
   position: relative;
@@ -255,7 +286,7 @@ main {
   height: 100%;
   width: 50%;
   opacity: 0;
-  border-radius: 20px;
+  border-radius: 24px;
   font-size: 0.85rem;
   cursor: pointer;
 }
@@ -280,7 +311,7 @@ main {
   width: 80px;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.0509803922);
-  border-radius: 20px;
+  border-radius: 24px;
   top: 0;
   left: 0;
   right: 0;
@@ -352,7 +383,7 @@ main {
   display: flex;
   align-items: center;
   position: relative;
-  border-radius: 20px;
+  border-radius: 24px;
 }
 @media (orientation: landscape) and (max-height: 700px) {
   .slide {
@@ -363,7 +394,7 @@ main {
 .slide img {
   width: 100%;
   height: 100%;
-  border-radius: 20px;
+  border-radius: 24px;
 }
 .slide:active {
   border: 2px solid #ffad5a;
@@ -386,7 +417,6 @@ main {
   width: min(100%, 1500px);
   font-size: clamp(1.5rem, 1.2288rem + 1.3559vw, 2.5rem);
   padding-left: 1.5rem;
-  padding-top: 7.5rem;
   text-shadow: #fdad5d 1px 0 10px;
 }
 
@@ -454,7 +484,7 @@ main {
   display: flex;
   flex-direction: column;
   border: 0px solid #ffad5a;
-  border-radius: 20px;
+  border-radius: 24px;
   position: relative;
   background-color: rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -570,7 +600,7 @@ button.close {
 
 .modal-content {
   border: 1px solid #ffad5a;
-  border-radius: 20px;
+  border-radius: 24px;
   position: relative;
   background-color: rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.1);
