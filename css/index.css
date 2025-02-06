@@ -22,7 +22,7 @@ header {
 
 #header-content {
   margin: 0 auto;
-  width: min(100%, 1500px);
+  width: min(85%, 1500px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,7 +30,6 @@ header {
 
 #me-content {
   margin: 0 auto;
-  width: 90%;
   display: flex;
   flex-direction: column;
   padding-top: 7.7rem;
@@ -38,11 +37,16 @@ header {
 }
 @media (min-width: 1024px) {
   #me-content {
-    width: 85%;
     flex-direction: row;
     align-items: center;
     gap: 32px;
-    padding: 0;
+    padding-top: 3.7rem;
+  }
+}
+@media (min-width: 1900px) {
+  #me-content {
+    height: auto;
+    padding-top: 15rem;
   }
 }
 
@@ -183,10 +187,18 @@ section {
   min-height: 100vh;
   width: 100%;
 }
+@media (min-width: 1900px) {
+  section {
+    min-height: auto;
+  }
+}
+
+section#me {
+  margin: 0 auto;
+  width: min(85%, 1500px);
+}
 
 #home-content {
-  margin: 0 auto;
-  width: min(100%, 1500px);
   text-align: center;
   height: 100dvh;
   display: flex;
@@ -231,6 +243,11 @@ section {
 
 #projects-content {
   padding-top: 7.7rem;
+}
+@media (min-width: 1900px) {
+  #projects-content {
+    padding-top: 15rem;
+  }
 }
 
 main {
@@ -546,7 +563,7 @@ main {
 .title {
   color: #ffad5a;
   margin: 0 auto;
-  width: min(100%, 1500px);
+  width: min(85%, 1500px);
   font-size: clamp(1.5rem, 1.2288rem + 1.3559vw, 2.5rem);
   padding-left: 1.5rem;
   text-shadow: #fdad5d 1px 0 10px;
