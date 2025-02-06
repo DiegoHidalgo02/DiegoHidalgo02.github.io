@@ -1,6 +1,12 @@
 .svgIcon{
     width: 24px;
     height: 24px;
+    cursor: pointer;
+}
+
+.svgIconSocial{
+    @extend .svgIcon;
+    color: white;
 }
 
 .svgIconLeftHomeSlider{
