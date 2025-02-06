@@ -1,6 +1,5 @@
 #me-content{
     margin: 0 auto;
-    width: 90%;
     display: flex;
     flex-direction: column;
 
@@ -8,12 +7,17 @@
     height: 100dvh;
 
     @media (min-width: 1024px){
-        width: 85%;
         flex-direction: row;
         align-items: center;
         gap: 32px;
-        padding: 0;
+        padding-top: 3.7rem;
     }
+
+    @media (min-width: 1900px) {
+        height: auto;
+        padding-top: 15rem;
+    }
+
 }
 
 #me-photo{

@@ -47,5 +47,5 @@ $border-radius: 24px;
 
 @mixin widthAndPosition{
     margin: 0 auto; 
-    width: min($width100, $max-width);
+    width: min(85%, $max-width);
 }
