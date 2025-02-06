@@ -164,7 +164,7 @@ header {
 #me-social {
   width: 100%;
   margin-top: auto;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: space-around;
 }
@@ -356,6 +356,9 @@ main {
 
 .svgIconSocial {
   color: white;
+}
+.svgIconSocial:hover {
+  transform: scale(1.1);
 }
 
 .svgIconLeftHomeSlider {
