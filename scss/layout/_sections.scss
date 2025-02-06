@@ -1,5 +1,5 @@
-section:not(#home){
-    padding-top: 7.5rem;
+section{
+    position: relative;
     min-height: 100vh;
     @include width100;
 }
