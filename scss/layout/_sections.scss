@@ -2,12 +2,7 @@ section{
     position: relative;
     min-height: 100vh;
     @include width100;
-
     @media (min-width:1900px) {
         min-height: auto;
     }
-}
-
-section#me{
-    @include widthAndPosition;
 }
