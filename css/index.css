@@ -34,6 +34,8 @@ header {
   flex-direction: column;
   padding-top: 7.7rem;
   height: 100dvh;
+  margin: 0 auto;
+  width: min(85%, 1500px);
 }
 @media (min-width: 1024px) {
   #me-content {
@@ -193,11 +195,6 @@ section {
   }
 }
 
-section#me {
-  margin: 0 auto;
-  width: min(85%, 1500px);
-}
-
 #home-content {
   text-align: center;
   height: 100dvh;
@@ -205,6 +202,8 @@ section#me {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin: 0 auto;
+  width: min(85%, 1500px);
   -webkit-mask: radial-gradient(circle at center, #fff 50%, transparent 80%);
   mask: radial-gradient(circle at center, #fff 50%, transparent 80%);
   background-size: cover;
