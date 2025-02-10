@@ -249,6 +249,67 @@ section {
   }
 }
 
+#techStack-content {
+  margin: 0 auto;
+  width: min(85%, 1500px);
+  padding-top: 7.7rem;
+}
+@media (min-width: 1900px) {
+  #techStack-content {
+    padding-top: 15rem;
+  }
+}
+
+#techStack-content-childs {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+  margin-top: 2rem;
+}
+@media (min-width: 1024px) {
+  #techStack-content-childs {
+    margin-top: 4rem;
+  }
+}
+#techStack-content-childs > div {
+  border-bottom: 2px solid #ffad5a;
+}
+
+.techStack-svgContainer {
+  margin: 0 auto;
+  width: min(85%, 1500px);
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.techEl {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25), inset 0 0 10px rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  border-radius: 24px;
+  flex-direction: column;
+}
+.techEl::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.03));
+  pointer-events: none;
+}
+
 main {
   background: #1a0841;
   background-image: radial-gradient(rgba(255, 255, 255, 0.178) 1px, transparent 0);
@@ -375,6 +436,12 @@ main {
 }
 .svgIconSocial:hover {
   transform: scale(1.1);
+}
+
+.svgIconStack {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
 }
 
 .svgIconLeftHomeSlider {
@@ -564,7 +631,6 @@ main {
   margin: 0 auto;
   width: min(85%, 1500px);
   font-size: clamp(1.5rem, 1.2288rem + 1.3559vw, 2.5rem);
-  padding-left: 1.5rem;
   text-shadow: #fdad5d 1px 0 10px;
 }
 
