@@ -273,7 +273,7 @@ section {
   }
 }
 #techStack-content-childs > div {
-  border-bottom: 2px solid #ffad5a;
+  border-bottom: 2px solid rgb(179, 179, 179);
 }
 
 .techStack-svgContainer {
