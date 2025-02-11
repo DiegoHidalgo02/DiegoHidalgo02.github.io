@@ -242,6 +242,7 @@ section {
 
 #projects-content {
   padding-top: 7.7rem;
+  padding-bottom: 7rem;
 }
 @media (min-width: 1900px) {
   #projects-content {
@@ -315,6 +316,43 @@ main {
   background-image: radial-gradient(rgba(255, 255, 255, 0.178) 1px, transparent 0);
   background-size: 15px 15px;
   background-position: -19px -19px;
+}
+
+footer {
+  background-color: #121217;
+}
+
+#footer-content {
+  margin: 0 auto;
+  width: min(85%, 1500px);
+  padding: 7rem 0;
+}
+
+#footer-title {
+  font-size: 2rem;
+}
+
+#footer-subtitle {
+  font-size: 1.5rem;
+}
+
+#footer-copyright {
+  margin-top: 1rem;
+  opacity: 0.6;
+}
+
+#footer-links {
+  display: flex;
+}
+#footer-links a {
+  display: flex;
+  gap: 8px;
+}
+#footer-links hr {
+  height: 19px;
+  width: 0.6px;
+  margin: 0 20px;
+  background-color: white;
 }
 
 .button {
