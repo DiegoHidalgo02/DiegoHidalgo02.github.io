@@ -202,8 +202,8 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: min(100%, 1500px);
   margin: 0 auto;
-  width: min(85%, 1500px);
   -webkit-mask: radial-gradient(circle at center, #fff 50%, transparent 80%);
   mask: radial-gradient(circle at center, #fff 50%, transparent 80%);
   background-size: cover;
@@ -873,6 +873,20 @@ button.close {
 .modal-body {
   margin-bottom: 1rem;
   padding: 1.5rem;
+}
+
+#container3D {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+canvas {
+  position: relative;
+  margin: 0 auto;
+  z-index: 0;
+  pointer-events: none;
 }
 
 @keyframes gradient-animation {
