@@ -1,0 +1,38 @@
+footer{
+    background-color: #121217;
+}
+
+#footer-content{
+    @include widthAndPosition;
+    padding: 7rem 0;
+}
+
+#footer-title{
+    font-size: 2rem;
+}
+
+#footer-subtitle{
+    font-size: 1.5rem;
+}
+
+#footer-copyright{
+    margin-top: 1rem;
+    opacity: .6;
+}
+
+#footer-links{
+    display: flex;
+
+    & a{
+        display: flex;
+        gap: 8px;     
+    }
+
+    & hr{
+        height: 19px;
+        width: .6px;
+        margin: 0 20px;
+        background-color: white;
+    }
+
+}
