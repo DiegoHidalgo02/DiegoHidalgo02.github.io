@@ -14,6 +14,13 @@ img {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
 header {
   width: 100%;
   position: fixed;
@@ -22,7 +29,7 @@ header {
 
 #header-content {
   margin: 0 auto;
-  width: min(85%, 1500px);
+  width: min(85%, 1250px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,7 +42,7 @@ header {
   padding-top: 7.7rem;
   height: 100dvh;
   margin: 0 auto;
-  width: min(85%, 1500px);
+  width: min(85%, 1250px);
 }
 @media (min-width: 1024px) {
   #me-content {
@@ -202,8 +209,8 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: min(100%, 1500px);
   margin: 0 auto;
-  width: min(85%, 1500px);
   -webkit-mask: radial-gradient(circle at center, #fff 50%, transparent 80%);
   mask: radial-gradient(circle at center, #fff 50%, transparent 80%);
   background-size: cover;
@@ -252,7 +259,7 @@ section {
 
 #techStack-content {
   margin: 0 auto;
-  width: min(85%, 1500px);
+  width: min(85%, 1250px);
   padding-top: 7.7rem;
 }
 @media (min-width: 1900px) {
@@ -278,7 +285,7 @@ section {
 
 .techStack-svgContainer {
   margin: 0 auto;
-  width: min(85%, 1500px);
+  width: min(85%, 1250px);
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
@@ -324,7 +331,7 @@ footer {
 
 #footer-content {
   margin: 0 auto;
-  width: min(85%, 1500px);
+  width: min(85%, 1250px);
   padding: 7rem 0;
 }
 
@@ -459,7 +466,7 @@ footer {
 }
 @media (min-width: 1024px) {
   #header-content nav {
-    width: 50%;
+    width: 60%;
   }
 }
 
@@ -667,7 +674,7 @@ footer {
 .title {
   color: #ffad5a;
   margin: 0 auto;
-  width: min(85%, 1500px);
+  width: min(85%, 1250px);
   font-size: clamp(1.5rem, 1.2288rem + 1.3559vw, 2.5rem);
   text-shadow: #fdad5d 1px 0 10px;
 }
@@ -873,6 +880,20 @@ button.close {
 .modal-body {
   margin-bottom: 1rem;
   padding: 1.5rem;
+}
+
+#container3D {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+canvas {
+  position: relative;
+  margin: 0 auto;
+  z-index: 0;
+  pointer-events: none;
 }
 
 @keyframes gradient-animation {
