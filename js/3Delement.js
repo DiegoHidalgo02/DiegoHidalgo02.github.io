@@ -19,20 +19,13 @@ const loader = new GLTFLoader();
 loader.load('../assets/happy_drone.glb',
     function(gltf){
         drone = gltf.scene;
-        drone.position.y = .3;
-        drone.position.x = .55;
+        drone.position.x = .72;
+        drone.position.y = .3
         drone.rotation.y = -.3;
         scene.add(drone);
-
         mixer = new THREE.AnimationMixer(drone);
-
         const action = mixer.clipAction(gltf.animations[0]);
-
-        //mixer.clipAction(gltf.animations[0].play());
-
         action.play();
-
-        console.log(gltf.animations);
     },
     function(xhr){
     },
@@ -77,10 +70,8 @@ scene.add(spotLight);
 
 const reRender3D = () =>{
     requestAnimationFrame(reRender3D);
-
+    renderer.render(scene, camera);    
     if(mixer){ mixer.update(0.020)}
-
-    renderer.render(scene, camera);
 };
 
 reRender3D();
@@ -88,18 +79,18 @@ reRender3D();
 let arrPositionModel = [
     {
         id: 'home',
-        position: {x:.55, y:.3, z:0},
+        position: {x:.72, y:.3, z:.5},
         rotation: {x: 0, y:-.3, z:0}
     },
     {
         id:'me',
-        position: {x:.8, y:.65, z:0},
+        position: {x:1.2, y:.4, z:0},
         rotation: {x: 0, y:-.3, z:0}
     },
     {
         id:'techStack',
-        position: {x:-.63, y:.65, z:0},
-        rotation: {x: 0, y:-.3, z:0}
+        position: {x:-.5, y:.65, z:0},
+        rotation: {x: .85, y:0, z:0}
     },
     {
         id:'projects',
