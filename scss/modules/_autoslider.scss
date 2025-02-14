@@ -103,21 +103,6 @@
     @media (orientation: landscape) and (max-height: 700px) {
         margin: .5rem auto 1rem auto;
     }
-    -webkit-mask: linear-gradient(
-        90deg,
-        transparent,
-        #fff 30%, 
-        #fff 80%,
-        transparent
-    );
-
-    mask: linear-gradient(
-        90deg,
-        transparent,
-        #fff 30%, 
-        #fff 80%,
-        transparent
-    );
 }
 
 #project-carousel .infinite-carousel{
