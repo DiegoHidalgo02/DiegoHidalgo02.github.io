@@ -146,6 +146,8 @@ window.addEventListener("scroll", () => {
 })
 
 
+//This function will be optimizated
+//But it works.
 function getResponsivePosition(section) {
     const width = window.innerWidth;
     
@@ -197,11 +199,5 @@ function getResponsivePosition(section) {
 window.addEventListener('resize', () =>{
     renderer.setSize(window.innerWidth, window.innerHeight);
     camera.aspect = window.innerWidth / window.innerHeight;
-
-    if (drone && drone.position) {
-        const newPosition = getResponsivePosition();
-        drone.position.set(newPosition.x, newPosition.y, newPosition.z);
-    }
-
     camera.updateProjectionMatrix();
 })
