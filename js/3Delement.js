@@ -79,22 +79,22 @@ reRender3D();
 let arrPositionModel = [
     {
         id: 'home',
-        position: {x:.72, y:.3, z:.5},
+        position:getResponsivePosition("home"), //{x:.72, y:.3, z:.5}
         rotation: {x: 0, y:-.3, z:0}
     },
     {
         id:'me',
-        position: {x:1.2, y:.4, z:0},
+        position:getResponsivePosition("me"), //{x:1.2, y:.4, z:0}, //
         rotation: {x: 0, y:-.3, z:0}
     },
     {
         id:'techStack',
-        position: {x:-.5, y:.65, z:0},
+        position: getResponsivePosition("techStack"), //{x:-.5, y:.65, z:0}
         rotation: {x: .85, y:0, z:0}
     },
     {
         id:'projects',
-        position:{x:-.75, y:.65, z:0},
+        position:getResponsivePosition("projects"), //{x:-.75, y:.65, z:0}
         rotation:{x:.5, y:.6, z:0}
     }
 ]
@@ -146,8 +146,62 @@ window.addEventListener("scroll", () => {
 })
 
 
+function getResponsivePosition(section) {
+    const width = window.innerWidth;
+    
+    if(section === "home"){
+
+        if (width < 768) { // Mobile
+            return {x: 0, y: .55, z: 0.5};
+        } else if (width < 1024) { // Tablet
+            return {x: 0.5, y: 0.3, z: 0.5};
+        } else { // Desktop
+            return {x:.72, y:.3, z:.5};
+        }
+
+    }else if(section === "me"){
+
+        if (width < 768) { // Mobile
+            return {x: 0.4, y: 0.3, z: 0.5};
+        } else if (width < 1024) { // Tablet
+            return {x: 0.5, y: 0.3, z: 0.5};
+        } else { // Desktop
+            return {x:1.2, y:.4, z:0};
+        }
+
+    }else if(section === "techStack"){
+
+        if (width < 768) { // Mobile
+            return {x: 0.4, y: 0.3, z: 0.5};
+        } else if (width < 1024) { // Tablet
+            return {x: 0.5, y: 0.3, z: 0.5};
+        } else { // Desktop
+            return {x:-.5, y:.65, z:0};
+        }
+
+    }else if(section === "projects"){
+        
+        if (width < 768) { // Mobile
+            return {x: 0, y: .7, z: 0.5};
+        } else if (width < 1024) { // Tablet
+            return {x: 0.5, y: 0.3, z: 0.5};
+        } else { // Desktop
+            return {x:-.75, y:.65, z:0};
+        }
+
+    }
+
+}
+
+
 window.addEventListener('resize', () =>{
     renderer.setSize(window.innerWidth, window.innerHeight);
     camera.aspect = window.innerWidth / window.innerHeight;
+
+    if (drone && drone.position) {
+        const newPosition = getResponsivePosition();
+        drone.position.set(newPosition.x, newPosition.y, newPosition.z);
+    }
+
     camera.updateProjectionMatrix();
 })
