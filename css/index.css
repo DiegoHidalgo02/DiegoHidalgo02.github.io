@@ -212,7 +212,6 @@ section {
   width: min(100%, 1500px);
   margin: 0 auto;
   -webkit-mask: radial-gradient(circle at center, #fff 50%, transparent 80%);
-  mask: radial-gradient(circle at center, #fff 50%, transparent 80%);
   background-size: cover;
   background-position: center center;
   background-repeat: repeat;
@@ -377,7 +376,7 @@ footer {
 }
 
 .button:active {
-  transform: scale(0.993);
+  transform: scale(0.94);
 }
 
 #header-content nav {
@@ -439,7 +438,7 @@ footer {
     margin-right: 0px;
   }
 }
-#header-content nav ul li {
+#header-content nav ul li:not(:last-child) {
   font-weight: 600;
   font-size: clamp(0.875rem, 0.8411rem + 0.1695vw, 1rem);
   padding: 10px 0px;
@@ -448,7 +447,7 @@ footer {
   transition: all 0.4s ease-in-out;
   cursor: pointer;
 }
-#header-content nav ul li a {
+#header-content nav ul li:not(:last-child) a {
   color: rgb(179, 179, 179);
 }
 #header-content nav ul .button {
@@ -608,8 +607,6 @@ footer {
 #home-carousel .infinite-carousel {
   width: 250px;
   margin: 2rem auto;
-  -webkit-mask: linear-gradient(90deg, transparent, #fff 30%, #fff 80%, transparent);
-  mask: linear-gradient(90deg, transparent, #fff 30%, #fff 80%, transparent);
 }
 @media (orientation: landscape) and (max-height: 700px) {
   #home-carousel .infinite-carousel {
@@ -782,7 +779,6 @@ footer {
   display: -webkit-box;
   width: 85%;
   -webkit-line-clamp: 3;
-  line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -848,7 +844,7 @@ button.close {
 }
 
 .close:active {
-  scale: 0.94;
+  transform: scale(0.94);
 }
 
 #ProjectType {
