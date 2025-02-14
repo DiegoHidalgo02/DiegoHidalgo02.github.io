@@ -71,7 +71,7 @@ scene.add(spotLight);
 const reRender3D = () =>{
     requestAnimationFrame(reRender3D);
     renderer.render(scene, camera);    
-    if(mixer){ mixer.update(0.020)}
+    if(mixer){ mixer.update(0.007)}
 };
 
 reRender3D();
